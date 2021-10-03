@@ -1,7 +1,7 @@
 <script>
-  import '../css/global.css';
+	import "../css/global.css";
 </script>
 
 <main>
-  <slot />
+	<slot />
 </main>
