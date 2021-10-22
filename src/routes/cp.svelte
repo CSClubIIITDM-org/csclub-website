@@ -78,7 +78,7 @@
 		<div style="grid-column:1/2; grid-row:2/5" id="mapid">
 			<a
 				href="https://www.google.com/maps/place/Indian+Institute+of+Information+Technology,+Design+and+Manufacturing,+Kancheepuram/@12.8379343,80.1351554,17z/data=!3m1!4b1!4m5!3m4!1s0x3a525851fbcd3b6b:0x9f1067aa71e3898e!8m2!3d12.8379343!4d80.1373441"
-				><img src="../static/images/map.jpeg" alt="map" /></a
+				><img src="/map.jpeg" alt="map" /></a
 			>
 		</div>
 		<div style="grid-column:2/3; grid-row:2/3; font-size:1.8rem">CS Club</div>
