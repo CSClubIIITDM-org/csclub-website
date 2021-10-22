@@ -60,45 +60,30 @@
     </div>
   </div>
   
-  <!-- <h1>Hi</h1> -->
 
-  <div id="row2">
-      <div class="column-1">
-              <div>
-                  <div class="footer-widget-heading">
-                      <h3 class="loc">Location</h3>
-                  </div>
-                  <div>
-                      <div class="map"></div>
-                  </div>
-              </div>
-      </div>
-      <div class="column-2">
-                  <div class="footer-widget-heading ">
-                      <h3 class="contact">Contact us</h3>
-                  </div>
-                  <div class="footer-widget-heading">
-                      <h4 style="color: white" class="footer-cs">CS Club</h4>
-                      <div class="address">
-                      <p style="color: white">IIITDM Kancheepuram</p>
-                        <p>Chennai: 600127.</p>
-                    </div>
-                      <p class="mail-id"style="color: whitesmoke">
-                          Email:
-                          <a href="mailto:csclub@iiitdm.ac.in"> csclub@iiitdm.ac.in </a>
-                      </p>
-                  </div>
-      </div>
-  </div>
 
-<div class="copyright-area">
-                <div class="copyright-text">
-                    <p>
-                        Copyright &copy; 2020 | All Rights Reserved | Done by
-                        <a href="people">Web Team</a>
-                    </p>
-                </div>
-</div>  
+<footer>
+    <div class="loc" style="grid-column:1/2; grid-row:1/2"><h1>Location</h1></div>
+    <div  style="grid-column:2/3; grid-row:1/2"><h1>Contact Us</h1></div>
+    <div class="loc" style="grid-column:1/2; grid-row:2/5" id="mapid">
+        <a
+            href="https://www.google.com/maps/place/Indian+Institute+of+Information+Technology,+Design+and+Manufacturing,+Kancheepuram/@12.8379343,80.1351554,17z/data=!3m1!4b1!4m5!3m4!1s0x3a525851fbcd3b6b:0x9f1067aa71e3898e!8m2!3d12.8379343!4d80.1373441"
+            ><img src="/" alt="map" /></a
+        >
+    </div>
+    <div style="grid-column:2/3; grid-row:2/3; font-size:1.8rem">CS Club</div>
+    <div style="grid-column:2/3; grid-row:3/4">
+        <p>IIITDM Kancheepuram</p>
+        <p>Chennai: 600127</p>
+    </div>
+    <div style="grid-column:2/3; grid-row:4/5">
+        Email: <a href="mailto: csclub@iiitdm.ac.in">csclub@iiitdm.ac.in</a>
+    </div>
+</footer>
+<p class="copyright" style="background:black">
+    Copyrights © 2020 | All Rights Reserved | Done by
+    <span>Web Team</span>
+</p>
 
 
 
@@ -316,86 +301,45 @@ label {
 } */
 
 
-#row2 {
-	background: black;
-	color: white;
-    margin-top: 50px;
-    border-top-left-radius: 2%;
-}
-#row2:after {
-	content: "";
-	display: table;
-	clear: both;
-}
 
-.column-1 {
-	float: left;
-	width: 50%;
-	padding: 0 10px 80px 100px;
-	/* padding-top: 0;
-	padding-left: 160px; */
-	margin-top: 2rem;
-	position: relative;
-}
-
-
-.column-2 {
-	float: left;
-	width: 50%;
-	padding: 10px;
-	margin-top: 2rem;
-}
-
-.map {
-	width: 500px;
-	height: 350px;
-	border: 0;
-	background: linear-gradient(98deg, #292F38 0.63%, #414652 95.79%);
-
-}
-
-
-.footer-widget-heading h3 {	
-	font-weight: bold;
-	margin-bottom: 40px;
-	position: relative;
-}
+footer {
+		display: grid;
+		grid-template-columns: 45% 45%;
+		grid-template-rows: 5rem 5rem 5rem 5rem;
+		row-gap: 1rem;
+		column-gap: 10%;
+        background: black;
+        border-top-left-radius: 4%;
+        border-top-right-radius: 4%;
+        margin-top: 50px;
+	}
+	#mapid {
+		height: 15rem;
+		width: 70%;
+		background: linear-gradient(
+			119.1deg,
+			#292f38 1.68%,
+			#292f38 1.69%,
+			#414652 100%
+		);
+		box-shadow: 0px 4px 4px #000000;
+		border-radius: 40px;
+	}
+	#mapid img {
+		height: 100%;
+		width: 100%;
+		border-radius: 40px;
+	}
+	.copyright {
+		text-align: center;
+	}
+	.copyright span {
+		color: #34d399;
+	}
 
 .loc{
-    font-size: 40px;
-}
-
-.contact{
-    font-size: 40px;
-}
-
-.footer-cs{
-    font-size: 30px;
-}
-
-.address{
-    margin-top: 3px;
-    font-size: 18px;
-}
-
-.mail-id{
-    margin-top: 30px;
-    font-size: 20px;
-}
-.copyright-area {
-	background: black;
-	padding: 2px 0;
-    text-align: center;
-}
-.copyright-text p {
-	margin: 0;
-	font-size: 14px;
-	color: #fff;
-}
-.copyright-text p a {
-	text-decoration: none;
-}
-
+    margin-left: 80px;
+}    
 
 /* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" /> */
 
