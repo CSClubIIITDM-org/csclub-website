@@ -24,9 +24,9 @@
 		<nav>
 			<input type="checkbox" id="check" />
 			<label for="check" class="checkbtn "><i class="fas fa-bars" />☰</label>
-			<img src="../static/images/insignia.png" width="70" height="70" alt="" />
+			<img src="/insignia.png" width="70" height="70" alt="" />
 			<span class="vl" />
-			<img src="../static/images/logo.png" width="70" height="70" alt="" />
+			<img src="/logo.png" width="70" height="70" alt="" />
 			<a href="." class="title"><strong>CS CLUB</strong></a>
 			<ul>
 				<li><a href=".">Home</a></li>
@@ -53,7 +53,7 @@
 		<div class="dots" />
 	</div>
 	<br /><br />
-	<img id="designer" src="../static/images/designer.png" alt="designer" />
+	<img id="designer" src="/designer.png" alt="designer" />
 	<h1>About Us</h1>
 	<br /><br />
 	<p style="font-size:1.3rem;">
