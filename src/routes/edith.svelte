@@ -84,8 +84,6 @@
     <span><a href="people">Web Team</a></span>
 </p>
 
-
-
 <style>
   
 
