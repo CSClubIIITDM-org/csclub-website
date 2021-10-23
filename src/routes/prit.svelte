@@ -89,11 +89,14 @@
 
 
 <style>
-  
+:root{
+    --text_color: linear-gradient(180deg, #34D399 0%, #43E97B 100%);
+   --hoverr:white;
+}  
 
 .title {
     text-decoration: none;
-    color: linear-gradient(180deg, #34D399 0%, #43E97B 100%);
+    background-color: var(--text_color);
     font-weight: 800;
     font-size: 40px;
     line-height: 40px;
@@ -113,7 +116,7 @@ nav > ul > li {
 
 
 nav ul li:hover > a {
-    color: white;
+    color: var(--hoverr);
 }
 
 nav > ul > li {
@@ -121,7 +124,7 @@ nav > ul > li {
 }
 
 nav a {
-    color:linear-gradient(180deg, #34D399 0%, #43E97B 100%);
+    background-color: var(--text_color);
 }
 
 [type="checkbox"],
@@ -315,19 +318,15 @@ footer {
 		text-align: center;
 	}
 	.copyright span {
-		color: #34d399;
+		color:  var(--text_color);
 	}
     
     .copyright span:hover>a{
-        color: white;
+        color:var(--hoverr);
     }
 
 .loc{
     margin-left: 80px;
 }    
-
-
-
-
 
 </style>
