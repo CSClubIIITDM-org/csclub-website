@@ -133,7 +133,7 @@ nav a {
 label {
     display: none;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 768px) {
     nav ul {
         display: none;
     }
@@ -341,7 +341,6 @@ footer {
     margin-left: 80px;
 }    
 
-/* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" /> */
 
 
 
