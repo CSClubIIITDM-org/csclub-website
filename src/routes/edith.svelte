@@ -11,7 +11,6 @@
     <div>
         <nav>
             <img src="/" width="70" height="70" alt=""> 
-            <span class='vl'> </span> 
             <img src="/" width="70" height="70" alt="">
             <a href="." class="title"><strong>CS CLUB</strong></a>
             <input type="checkbox" id="nav" /><label for="nav"></label>
@@ -82,20 +81,14 @@
 </footer>
 <p class="copyright" style="background:black">
     Copyrights © 2020 | All Rights Reserved | Done by
-    <span>Web Team</span>
+    <span><a href="people">Web Team</a></span>
 </p>
 
 
 
 <style>
   
-.vl {
-  border-left: 2px solid green;
-  margin-right: 3px;
-  height: 1px;
-  position: static;
-  margin-top: 5px;
-}
+
 .title {
     text-decoration: none;
     color: linear-gradient(180deg, #34D399 0%, #43E97B 100%);
@@ -336,6 +329,9 @@ footer {
 	.copyright span {
 		color: #34d399;
 	}
+    .copyright span:hover>a{
+        color:white;
+    }
 
 .loc{
     margin-left: 80px;
