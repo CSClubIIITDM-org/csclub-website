@@ -1,22 +1,4 @@
 <script>
-	import { fade } from "svelte/transition";
-
-	const carouselPhotos = [
-		"CS Club IIITDM",
-		"Gallery",
-		"Competative Programming",
-		"Project, Research & Industrial Talks",
-		"Educating Information Technology and Hardware",
-		"Networking",
-		"People",
-		"Timeline",
-	];
-
-	let index = 0;
-
-	const next = () => {
-		index = (index + 1) % carouselPhotos.length;
-	};
 </script>
 
 <header>
@@ -43,15 +25,7 @@
 </header>
 <section>
 	<div class="dots__dot dots__dot--active" style="display:hidden" />
-	<div class="slides">
-		{#each [carouselPhotos[index]] as src (index)}
-			<div class="slide" style="transform: translateX({100 * index}%)">
-				<h1>{src}</h1>
-			</div>
-		{/each}
-		<button on:click={next}>Next!</button>
-		<div class="dots" />
-	</div>
+	<div class="slide"><h1>CS Club IIITDM</h1></div>
 	<br /><br />
 	<img id="designer" src="/designer.png" alt="designer" />
 	<h1>About Us</h1>
@@ -149,46 +123,13 @@
 		position: absolute;
 		top: 120px;
 	}
-	.slides {
-		max-width: 100%;
-		height: 300px;
-		position: relative;
+	.slide {
+		background: rgba(0, 0, 0, 0.5);
+		height: 350px;
 		display: flex;
-		flex-direction: column;
-		justify-content: flex-end;
 		align-items: center;
-		/* IN THE END */
-		overflow: hidden;
-	}
-	.slide,
-	button {
-		position: absolute;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		margin: auto auto;
-		display: grid;
-		direction: row;
-		grid-template-columns: auto;
-		grid-template-rows: auto auto auto;
-		justify-items: center;
-		align-content: center;
 		justify-content: center;
-		/* THIS creates the animation! */
-		transition: transform ease-in-out 2s;
 	}
-	.dots__dot {
-		background: none;
-		border: none;
-		color: white;
-		font-size: 2rem;
-		font-weight: 900;
-	}
-
-	.dots__dot--active {
-		color: #34d399;
-	}
-
 	#designer {
 		float: right;
 		height: 20rem;
