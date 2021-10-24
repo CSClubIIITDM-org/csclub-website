@@ -102,7 +102,7 @@
 		width: 100%;
 		position: fixed;
 		left: 0;
-		background: rgb(31, 41, 55);
+		background: var(--nav-bar);
 		z-index: 100;
 	}
 	.title {
@@ -122,7 +122,7 @@
 		margin: 0 5px;
 	}
 	nav ul li a:hover {
-		color: white;
+		color: var(--hover);
 	}
 	.checkbtn {
 		font-size: 30px;
@@ -139,7 +139,7 @@
 		top: 120px;
 	}
 	.slide {
-		background: rgba(0, 0, 0, 0.5);
+		background: var(--slide-bar);
 		height: 350px;
 		display: flex;
 		align-items: center;
@@ -163,14 +163,14 @@
 		text-align: center;
 		padding-top: 10%;
 		height: 10rem;
-		background: linear-gradient(98deg, #292f38 0.63%, #414652 95.79%);
+		background: var(--app-gradient-light);
 		border-radius: 40px;
 	}
 	.leaderboard {
 		display: flex;
 		padding: 1rem;
 		background: #000000;
-		box-shadow: inset 0px 4px 100px rgba(67, 233, 123, 0.5);
+		box-shadow: inset 0px 4px 100px var(--app-color-primary);
 		border-radius: 10px;
 		flex-direction: column;
 	}
@@ -178,7 +178,7 @@
 		height: 2.5rem;
 		margin-bottom: 1rem;
 		width: 100%;
-		background: linear-gradient(180deg, #1fdb95 0%, #43e97b 100%);
+		background: var(--app-gradient-primary);
 		box-shadow: 0px 0px 50px #000000;
 		border-radius: 10px;
 	}
@@ -192,12 +192,7 @@
 	#mapid {
 		height: 15rem;
 		width: 70%;
-		background: linear-gradient(
-			119.1deg,
-			#292f38 1.68%,
-			#292f38 1.69%,
-			#414652 100%
-		);
+		background: var(--app-gradient-light);
 		box-shadow: 0px 4px 4px #000000;
 		border-radius: 40px;
 	}
@@ -210,7 +205,7 @@
 		text-align: center;
 	}
 	.copyright span {
-		color: #34d399;
+		color: var(--app-color-primary);
 	}
 	@media (max-width: 920px) {
 		.checkbtn {
@@ -222,7 +217,7 @@
 			height: 100vh;
 			top: 80px;
 			left: -100%;
-			background: rgb(31, 41, 55);
+			background: var(--nav-bar);
 			text-align: center;
 			transition: all 0.5s;
 		}

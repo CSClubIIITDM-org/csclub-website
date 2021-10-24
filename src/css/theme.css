@@ -1,6 +1,6 @@
 body {
   --transition-duration: 150ms;
-
+  
   --app-main-font-family: 'Poppins', sans-serif;
   --app-heading-font-family: 'Poppins', serif;
 
@@ -20,4 +20,8 @@ body {
 
   --app-gradient-primary: linear-gradient(94.79deg, #34d399 2.97%, #43e97b 72.35%);
   --app-gradient-light: linear-gradient(99.18deg, #292f38 2.43%, #414652 100.01%);
+
+  --nav-bar:rgb(31, 41, 55);
+  --hover: white;
+  --slide-bar: rgba(0, 0, 0, 0.5);
 }
