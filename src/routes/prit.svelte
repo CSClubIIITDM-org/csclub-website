@@ -43,11 +43,19 @@
 		<section class="events-section">
 			<h2>Events</h2>
 
-			{#each events as { title }}
-				<div class="card">
-					<p>{title}</p>
-				</div>
-			{/each}
+			<div class="cards-section">
+				{#each events as { title }}
+					<div class="card">
+						<p>{title}</p>
+					</div>
+				{/each}
+			</div>
+		</section>
+
+		<section class="resources-section">
+			<h2>Resources</h2>
+
+			QUERY FOR LATER
 		</section>
 	</main>
 </div>
@@ -103,5 +111,38 @@
 				height: auto;
 			}
 		}
+	}
+
+	.cards-section {
+		display: flex;
+		gap: 2rem;
+
+		padding: 1rem 0;
+
+		width: 100%;
+
+		overflow-x: scroll;
+		overflow-y: hidden;
+
+		margin-bottom: 3rem;
+	}
+
+	.card {
+		display: grid;
+		place-items: center;
+
+		flex: 1;
+
+		min-width: 20rem;
+		width: 20rem;
+
+		padding: 1rem;
+
+		text-align: center;
+		font-size: 1.4rem;
+
+		background-image: var(--app-gradient-light);
+
+		border-radius: 1rem;
 	}
 </style>

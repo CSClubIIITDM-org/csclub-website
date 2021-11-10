@@ -15,8 +15,6 @@ body {
 	background-color: var(--app-color-shell);
 	color: var(--app-color-dark);
 
-	overflow-y: hidden;
-
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -26,14 +24,12 @@ body {
 html {
 	height: 100%;
 
-	overflow-y: auto;
+	overflow-y: visible;
 }
 
 html,
 body {
 	width: 100%;
-
-	overflow-x: hidden;
 }
 
 * {
@@ -147,6 +143,8 @@ a[href]:focus-visible {
 
 	display: flex;
 	flex-direction: column;
+
+	overflow-y: visible;
 
 	scroll-behavior: smooth;
 }

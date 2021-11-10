@@ -19,28 +19,6 @@
 	};
 </script>
 
-<header>
-	<div>
-		<nav>
-			<input type="checkbox" id="check" />
-			<label for="check" class="checkbtn "><i class="fas fa-bars" />☰</label>
-			<img src="/insignia.png" width="70" height="70" alt="" />
-			<span class="vl" />
-			<img src="/logo.png" width="70" height="70" alt="" />
-			<a href="." class="title"><strong>CS CLUB</strong></a>
-			<ul>
-				<li><a href=".">Home</a></li>
-				<li><a href="gallery">Gallery</a></li>
-				<li><a href="cp">CP</a></li>
-				<li><a href="prit">PRIT</a></li>
-				<li><a href="edith">EDITH</a></li>
-				<li><a href="networking">Networking</a></li>
-				<li><a href="people">People</a></li>
-				<li><a href="timeline">Timeline</a></li>
-			</ul>
-		</nav>
-	</div>
-</header>
 <section>
 	<div class="dots__dot dots__dot--active" style="display:hidden" />
 	<div class="slides">
@@ -106,45 +84,6 @@
 </section>
 
 <style>
-	nav {
-		height: 100px;
-		width: 100%;
-		position: fixed;
-		left: 0;
-		background: rgb(31, 41, 55);
-		z-index: 100;
-	}
-	nav img {
-		margin-top: 10px;
-	}
-	.title {
-		text-decoration: none;
-		font-size: 35px;
-		line-height: 80px;
-		font-weight: bold;
-	}
-	nav ul {
-		float: right;
-		margin-right: 20px;
-	}
-	nav ul li {
-		display: inline-block;
-		line-height: 80px;
-		margin: 0 5px;
-	}
-	nav ul li a:hover {
-		color: white;
-	}
-	.checkbtn {
-		font-size: 30px;
-		float: right;
-		margin-right: 40px;
-		line-height: 80px;
-		display: none;
-	}
-	#check {
-		display: none;
-	}
 	section {
 		position: absolute;
 		top: 120px;
@@ -261,27 +200,6 @@
 		color: #34d399;
 	}
 	@media (max-width: 920px) {
-		.checkbtn {
-			display: block;
-		}
-		ul {
-			position: fixed;
-			width: 100%;
-			height: 100vh;
-			top: 80px;
-			left: -100%;
-			background: rgb(31, 41, 55);
-			text-align: center;
-			transition: all 0.5s;
-		}
-		nav ul li {
-			display: block;
-			font-size: 20px;
-		}
-		#check:checked ~ ul {
-			left: 0;
-		}
-
 		h1 {
 			font-size: 1.5rem;
 		}
@@ -302,11 +220,6 @@
 	@media (max-width: 500px) {
 		#designer {
 			height: 15rem;
-		}
-	}
-	@media (max-width: 400px) {
-		.title {
-			font-size: 25px;
 		}
 	}
 </style>
