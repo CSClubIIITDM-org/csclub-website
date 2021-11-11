@@ -136,8 +136,8 @@
     .heading h1 {
       text-align: center;
       font-size: 150px;
-	  font-family: var(--app-heading-font-family);
-	  font-style: normal;
+      font-family: var(--app-heading-font-family);
+      font-style: normal;
     }
 
     .gallery-tiles {
