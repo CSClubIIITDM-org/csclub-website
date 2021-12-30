@@ -1,27 +1,27 @@
 <script>
-	const carouselPhotos = [
-		"CS Club IIITDM",
-		"Gallery",
-		"Competative Programming",
-		"Project, Research & Industrial Talks",
-		"Educating Information Technology and Hardware",
-		"Networking",
-		"People",
-		"Timeline",
-	];
+	import InitialScreen from "../components/InitialScreen.svelte";
 
-	let index = 0;
+	// const carouselPhotos = [
+	// 	"CS Club IIITDM",
+	// 	"Gallery",
+	// 	"Competative Programming",
+	// 	"Project, Research & Industrial Talks",
+	// 	"Educating Information Technology and Hardware",
+	// 	"Networking",
+	// 	"People",
+	// 	"Timeline",
+	// ];
 
-	const next = () => {
-		index = (index + 1) % carouselPhotos.length;
-	};
+	// let index = 0;
+
+	// const next = () => {
+	// 	index = (index + 1) % carouselPhotos.length;
+	// };
 </script>
 
-<body height="auto">
+<InitialScreen>Networking</InitialScreen>
+<!-- <body height="auto">
 	<br /><br />
-	<div class="heading">
-		<h1>Networking</h1>
-	</div>
 
 	<div id="row">
 		<div class="column_1">
@@ -87,15 +87,6 @@
 		top: 120px;
 	}
 
-	.heading {
-		background: black;
-		color: #34d399;
-		text-align: center;
-		font-size: 2.5rem;
-		padding: 170px 250px;
-		margin: 0;
-	}
-
 	.column_1 {
 		float: left;
 		width: 55%;
@@ -141,5 +132,53 @@
 		height: auto;
 		border-radius: 16px;
 		flex-direction: centre;
+	}
+</style> -->
+
+<main>
+	<section id="our-aim">
+		<h2>Our Aim</h2>
+		<br />
+		<div class="flex">
+			<div>
+				<p>
+					The greatest invention created in the information age,the INTERNET. We
+					the Networking Branch work towards spreading the influence and events
+					of the CS Club and form connections with other colleges and technical
+					industries.
+				</p>
+				<br /><br />
+				<p>
+					We help bring the creative part of the CS club by designing Posters,
+					Updating Social Media through Regular Posts,and connecting the
+					students to the Computer Industry.Our Branch is the glue that connects
+					the other 3 branches by spreading awareness of events and talks and
+					helping bring projects to students.
+				</p>
+			</div>
+			<img src="/networking.png" alt="networking" />
+		</div>
+	</section>
+	<br /><br />
+</main>
+
+<style>
+	main {
+		padding: 0.25rem 2rem;
+	}
+
+	img {
+		height: 20rem;
+		width: auto;
+		margin: 0 1rem;
+	}
+
+	.flex {
+		display: inline-flex;
+		gap: 1rem;
+	}
+
+	#our-aim {
+		font-size: 1.3rem;
 	}
 </style>

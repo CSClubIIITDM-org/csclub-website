@@ -1,23 +1,31 @@
-body {
-  --transition-duration: 150ms;
+:root {
+	--transition-duration: 150ms;
 
-  --app-main-font-family: 'Poppins', sans-serif;
-  --app-heading-font-family: 'Poppins', serif;
+	--app-main-font-family: "Poppins", sans-serif;
+	--app-heading-font-family: "Poppins", serif;
 
-  --app-color-shell: #111827;
+	--app-color-shell: #111827;
 
-  --app-color-dark: white;
-  --app-color-dark-rgb: 255, 255, 255;
-  --app-color-dark-contrast: #02081a;
+	--app-color-dark: white;
+	--app-color-dark-rgb: 255, 255, 255;
+	--app-color-dark-contrast: #02081a;
 
-  --app-color-light: #011627;
-  --app-color-light-rgb: 1, 22, 39;
-  --app-color-light-contrast: white;
+	--app-color-light: #011627;
+	--app-color-light-rgb: 1, 22, 39;
+	--app-color-light-contrast: white;
 
-  --app-color-primary: #34d399;
-  --app-color-primary-rgb: 52, 211, 153;
-  --app-color-primary-contrast: #03271e;
+	--app-color-primary: #34d399;
+	--app-color-primary-rgb: 52, 211, 153;
+	--app-color-primary-contrast: #03271e;
 
-  --app-gradient-primary: linear-gradient(94.79deg, #34d399 2.97%, #43e97b 72.35%);
-  --app-gradient-light: linear-gradient(99.18deg, #292f38 2.43%, #414652 100.01%);
+	--app-gradient-primary: linear-gradient(
+		94.79deg,
+		#34d399 2.97%,
+		#43e97b 72.35%
+	);
+	--app-gradient-light: linear-gradient(
+		99.18deg,
+		#292f38 2.43%,
+		#414652 100.01%
+	);
 }

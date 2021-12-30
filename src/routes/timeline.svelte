@@ -1,30 +1,35 @@
 <script>
+	import InitialScreen from "../components/InitialScreen.svelte";
 </script>
 
-<body>
-	<div class="padd" />
+<InitialScreen>Timeline</InitialScreen>
 
-	<!---------timeline---------->
-
+<main>
 	<section class="timeline">
-		<div id="line" />
+		<div class="left">hello</div>
+		<hr class="vertical-line" />
+		<div class="right">world</div>
 	</section>
+	<br /><br />
+</main>
 
-	<div class="padd" />
-</body>
-
-<style>
-	* {
-		margin: 0%;
-		padding: 0%;
+<style lang="scss">
+	main {
+		padding: 0.25rem 2rem;
 	}
 
-	.padd {
-		padding: 100px 100px;
+	.timeline {
+		display: flex;
+		flex: none;
+
+		.left,
+		.right {
+			left: 0;
+		}
 	}
 
-	#line {
-		padding: 10%;
+	.vertical-line {
+		border: 0;
 		width: 4px;
 		height: 2000px;
 		background: #1fdb95;

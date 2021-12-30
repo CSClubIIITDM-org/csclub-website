@@ -1,95 +1,70 @@
 <script>
-	const events = [
-		{ title: "HTML and Web Dev Session" },
-		{ title: "Cyber Security Awareness" },
-		{ title: "Problem Solving Session" },
-		{ title: "Introduction to Competitive Programming" },
-	];
+	import Card from "../components/Card.svelte";
+	import InitialScreen from "../components/InitialScreen.svelte";
 </script>
 
 <svelte:head>
 	<title>PRIT / CS Club / IIITDM kancheepuram</title>
 </svelte:head>
 
-<div class="container">
-	<section class="header">
-		<h1>Project, Research & Industrial Talks</h1>
+<InitialScreen>Project, Research & Industrial Talks</InitialScreen>
+<main>
+	<section class="our-aim">
+		<div class="content">
+			<h2>Our Aim</h2>
+			<br />
+			<p>
+				Projects, Research and Industrial Talks commonly known as PRIT is the
+				branch of CS Club which is responsible for all the project activities
+				and research work done by the club. We also coordinate talks by industry
+				professionals and experts so that students are ready to face the
+				industry. The main aim of PRIT is to try and bridge the gap between
+				industry and textbook knowledge. We ensure that all of this is done in a
+				fun filled, enthusiastic and phased manner because we believe learning
+				and fun go hand in hand.
+			</p>
+		</div>
+		<div class="image">
+			<img src="/prit-our-aim-image.png" alt="Our aim " />
+		</div>
 	</section>
 
-	<br /><br /><br /><br />
+	<br /><br />
 
-	<main>
-		<section class="our-aim-section">
-			<div class="content">
-				<h2>Our Aim</h2>
-				<p>
-					Projects, Research and Industrial Talks commonly known as PRIT is the
-					branch of CS Club which is responsible for all the project activities
-					and research work done by the club. We also coordinate talks by
-					industry professionals and experts so that students are ready to face
-					the industry. The main aim of PRIT is to try and bridge the gap
-					between industry and textbook knowledge. We ensure that all of this is
-					done in a fun filled, enthusiastic and phased manner because we
-					believe learning and fun go hand in hand.
-				</p>
-			</div>
-			<div class="image">
-				<img src="/prit-our-aim-image.png" alt="Our aim " />
-			</div>
-		</section>
+	<section class="events">
+		<h2>Our Events</h2>
+		<br />
 
-		<br /><br /><br /><br />
+		<div class="our-events">
+			<Card>HTML and Web Dev Session</Card>
+			<Card>Cyber Security Awareness</Card>
+			<Card>Problem Solving Session</Card>
+			<Card>Introduction to Competitive Programming</Card>
+		</div>
+	</section>
 
-		<section class="events-section">
-			<h2>Events</h2>
+	<br /><br />
 
-			<div class="cards-section">
-				{#each events as { title }}
-					<div class="card">
-						<p>{title}</p>
-					</div>
-				{/each}
-			</div>
-		</section>
+	<section class="resources">
+		<h2>Resources</h2>
+		<br />
+		<p>Link- 1:</p>
+		<p>Link- 2:</p>
+		<p>Link- 3:</p>
+		<p>Link- 4:</p>
+		<p>Link- 5:</p>
+		<p>Link- 6:</p>
+	</section>
 
-		<section class="resources-section">
-			<h2>Resources</h2>
-
-			QUERY FOR LATER
-		</section>
-	</main>
-</div>
+	<br /><br />
+</main>
 
 <style lang="scss">
-	.container {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.header {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-
-		width: 100%;
-
-		padding: 10rem 13rem;
-
-		background-color: rgba(0, 0, 0, 0.5);
-
-		h1 {
-			font-size: 7rem;
-
-			text-align: center;
-		}
-	}
-
 	main {
-		width: 85%;
+		padding: 0.25rem 2rem;
 	}
 
-	.our-aim-section {
+	.our-aim {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 
@@ -113,7 +88,7 @@
 		}
 	}
 
-	.cards-section {
+	.cards {
 		display: flex;
 		gap: 2rem;
 
@@ -144,5 +119,26 @@
 		background-image: var(--app-gradient-light);
 
 		border-radius: 1rem;
+	}
+
+	.resources {
+		font-size: 1.5rem;
+	}
+
+	.our-events {
+		width: 100%;
+		overflow: auto;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0.5rem;
+		margin: 0.5rem;
+
+		* {
+			padding: 5rem;
+		}
 	}
 </style>
