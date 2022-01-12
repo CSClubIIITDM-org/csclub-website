@@ -28,7 +28,7 @@
 
 	@include small-screens {
 		.heading h1 {
-			font-size: avh(7.5);
+			font-size: avh(6);
 		}
 	}
 </style>

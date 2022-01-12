@@ -9,18 +9,9 @@
 	/** @param {string} path */
 
 	const isCurrent = (path) => path === $page.url.pathname;
-
-	let header = undefined;
-
-	$: header &&
-		(isMobileNavOpen
-			? header.classList.add("mobile-nav-open")
-			: header.classList.remove("mobile-nav-open"));
 </script>
 
-<!-- empty span to prevent the style from getting tree shaked -->
-<span class="mobile-nav-open" />
-<header bind:this={header}>
+<header class:mobile-nav-open={isMobileNavOpen}>
 	<!-- <img src="../../static/" /> -->
 	<div class="logo-alt" />
 	<span />

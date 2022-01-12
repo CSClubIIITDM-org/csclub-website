@@ -28,16 +28,6 @@
 			<AppIcon path={mdiClose} fill="var(--app-color-dark)" size={40} />
 		</button>
 	</div>
-	<!-- <div class="links-container">
-		<a href="/" aria-current={isCurrent("/")}>HOME</a>
-		<a href="/active-events" aria-current={isCurrent("/active-events")}
-			>ANNOUNCEMENTS</a
-		>
-		<a href="/archives" aria-current={isCurrent("/archives")}>PAST EVENTS</a>
-		<a href="/calendar" aria-current={isCurrent("/calendar")}>CALENDAR</a>
-		<a href="/clubs" aria-current={isCurrent("/clubs")}>CLUBS</a>
-		<a href="/past-cores" aria-current={isCurrent("/past-cores")}>PAST CORES</a>
-	</div> -->
 	<div class="links-container">
 		<a href="/" aria-current={isCurrent("/")}>HOME</a>
 		<a href="/gallery" aria-current={isCurrent("/gallery")}>GALLERY</a>

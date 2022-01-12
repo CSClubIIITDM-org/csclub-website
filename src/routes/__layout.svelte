@@ -30,18 +30,10 @@
 </main>
 
 <style lang="scss">
-	@import "../css/screens.scss";
-
 	div.footer {
 		box-sizing: border-box;
 		display: flex;
 		width: 100%;
 		justify-content: center;
-	}
-
-	@include small-screens {
-		body {
-			padding-top: 0;
-		}
 	}
 </style>
