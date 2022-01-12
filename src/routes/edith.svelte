@@ -34,17 +34,23 @@
 		<h2>Our Events</h2>
 		<br />
 		<div class="our-events">
-			<Card>Basics of HTML/CSS</Card>
-			<Card>Github Session</Card>
-			<Card>Sudo !! CTF</Card>
-			<Card>Session on JavaScript</Card>
-			<Card>Session on Linux, WSL, Security Challanges</Card>
+			<div>
+				<Card actions>Basics of HTML/CSS</Card>
+				<Card actions>Github Session</Card>
+				<Card actions>Session on Linux, WSL, Security Challanges</Card>
+			</div>
+			<div>
+				<Card actions>Sudo !! CTF</Card>
+				<Card actions>Session on JavaScript</Card>
+			</div>
 		</div>
 	</section>
 	<br /><br />
 </main>
 
 <style lang="scss">
+	@import "../css/screens.scss";
+
 	main {
 		padding: 0.25rem 2rem;
 	}
@@ -68,15 +74,29 @@
 		overflow: auto;
 		box-sizing: border-box;
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: center;
-		padding: 0.5rem;
-		margin: 0.5rem;
 
-		* {
-			padding: 5rem;
+		div {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+    }
+	}
+
+	@include small-screens {
+		main {
+			padding: 0.25vw 2vw;
+		}
+
+		.flex {
+			flex-direction: column;
+		}
+
+		h2 {
+			font-size: 3rem;
 		}
 	}
 </style>

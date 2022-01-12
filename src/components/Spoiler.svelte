@@ -9,7 +9,9 @@
 	<slot name="content" />
 </div>
 
-<style>
+<style lang="scss">
+	@import "../css/screens.scss";
+
 	.spoiler {
 		width: 100%;
 		word-wrap: break-word;
@@ -27,5 +29,13 @@
 
 	.spacer {
 		flex: 1 1 auto;
+	}
+
+	@include small-screens {
+		.spoiler {
+			height: 4rem;
+			font-size: 1rem;
+      padding: 1.5rem;
+		}
 	}
 </style>

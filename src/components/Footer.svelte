@@ -13,7 +13,10 @@
 		</div>
 		<div class="column">
 			<div>Contact Us:</div>
-			<div>CS Club</div>
+			<div class="flex inline-logo">
+				<img src="/logo.png" alt="logo" class="logo" />
+				<div>CS Club</div>
+			</div>
 			<div>
 				<p>IIITDM Kancheepuram,</p>
 				<p>Chennai : 600127.</p>
@@ -31,10 +34,22 @@
 	</p>
 </footer>
 
-<style>
+<style lang="scss">
+	@import "../css/screens.scss";
+
 	img {
 		width: 17.5rem;
 		height: auto;
+	}
+
+	img.logo {
+		height: 3rem;
+		width: auto;
+	}
+
+	.flex {
+		display: inline-flex;
+		gap: 1rem;
 	}
 
 	p {
@@ -65,6 +80,7 @@
 	}
 
 	footer {
+		box-sizing: border-box;
 		background: black;
 		width: 75vw;
 		height: auto;
@@ -78,5 +94,36 @@
 		width: auto;
 		overflow: hidden;
 		background: none !important;
+	}
+
+	@include small-screens {
+		footer {
+			border-radius: 25px 25px 0 0;
+			width: avh(100);
+		}
+
+		.row p,
+		.column {
+			font-size: 15px;
+		}
+
+		.row,
+		.column {
+			flex-direction: column;
+		}
+
+		.column {
+			text-align: center;
+			display: flex;
+		}
+
+		.inline-logo {
+			display: block;
+		}
+
+		.map {
+			align-self: center;
+			margin-top: 2rem;
+		}
 	}
 </style>

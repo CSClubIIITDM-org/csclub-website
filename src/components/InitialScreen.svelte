@@ -3,14 +3,16 @@
 </div>
 <br />
 
-<style>
+<style lang="scss">
+	@import "../css/screens.scss";
+
 	.heading {
 		align-items: center;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 
-		height: calc(100vh - 92px);
+		height: calc(avh(100) - 92px);
 		width: 100%;
 		margin: 0;
 
@@ -22,5 +24,11 @@
 		font-size: 125px;
 		font-family: var(--app-heading-font-family);
 		font-style: normal;
+	}
+
+	@include small-screens {
+		.heading h1 {
+			font-size: avh(7.5);
+		}
 	}
 </style>

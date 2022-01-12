@@ -162,7 +162,9 @@
 	<br /><br />
 </main>
 
-<style>
+<style lang="scss">
+	@import "../css/screens.scss";
+
 	main {
 		padding: 0.25rem 2rem;
 	}
@@ -180,5 +182,26 @@
 
 	#our-aim {
 		font-size: 1.3rem;
+	}
+
+	@include small-screens {
+		main {
+			padding: 0.25vw 2vw;
+		}
+
+		.flex {
+			flex-direction: column;
+		}
+
+		h2 {
+			font-size: 3rem;
+		}
+
+		img {
+			height: auto;
+			width: 100%;
+      margin: 0;
+      margin-top: 2rem;
+		}
 	}
 </style>

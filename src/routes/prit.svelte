@@ -36,10 +36,14 @@
 		<br />
 
 		<div class="our-events">
-			<Card>HTML and Web Dev Session</Card>
-			<Card>Cyber Security Awareness</Card>
-			<Card>Problem Solving Session</Card>
-			<Card>Introduction to Competitive Programming</Card>
+			<div>
+				<Card>HTML and Web Dev Session</Card>
+				<Card>Cyber Security Awareness</Card>
+			</div>
+			<div>
+				<Card>Problem Solving Session</Card>
+				<Card>Introduction to Competitive Programming</Card>
+			</div>
 		</div>
 	</section>
 
@@ -60,13 +64,16 @@
 </main>
 
 <style lang="scss">
+	@import "../css/screens.scss";
+
 	main {
 		padding: 0.25rem 2rem;
 	}
 
 	.our-aim {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(1, 1fr);
 
 		.content {
 			p {
@@ -130,15 +137,45 @@
 		overflow: auto;
 		box-sizing: border-box;
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: center;
-		padding: 0.5rem;
-		margin: 0.5rem;
 
-		* {
-			padding: 5rem;
+		div {
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+		}
+	}
+
+	@include small-screens {
+		main {
+			padding: 0.25vw 2vw;
+		}
+
+		.flex {
+			flex-direction: column;
+		}
+
+		h2 {
+			font-size: 3rem;
+		}
+
+		.our-aim {
+			grid-template-rows: max-content;
+
+			.content {
+				grid-column: 1 / 3;
+				grid-row: 1 / 1;
+			}
+
+			.image {
+				grid-column: 1 / 3;
+				grid-row: 2 / 2;
+				flex-direction: column;
+				align-items: center;
+			}
 		}
 	}
 </style>

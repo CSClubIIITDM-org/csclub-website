@@ -15,13 +15,20 @@
 	$: current && dispatch("close");
 </script>
 
+<svelte:head>
+	<style>
+		body {
+			overflow: hidden;
+		}
+	</style>
+</svelte:head>
 <nav in:fadeIn out:fadeOut>
 	<div class="close-button-container">
 		<button on:click={() => dispatch("close")}>
 			<AppIcon path={mdiClose} fill="var(--app-color-dark)" size={40} />
 		</button>
 	</div>
-	<div class="links-container">
+	<!-- <div class="links-container">
 		<a href="/" aria-current={isCurrent("/")}>HOME</a>
 		<a href="/active-events" aria-current={isCurrent("/active-events")}
 			>ANNOUNCEMENTS</a
@@ -30,16 +37,28 @@
 		<a href="/calendar" aria-current={isCurrent("/calendar")}>CALENDAR</a>
 		<a href="/clubs" aria-current={isCurrent("/clubs")}>CLUBS</a>
 		<a href="/past-cores" aria-current={isCurrent("/past-cores")}>PAST CORES</a>
+	</div> -->
+	<div class="links-container">
+		<a href="/" aria-current={isCurrent("/")}>HOME</a>
+		<a href="/gallery" aria-current={isCurrent("/gallery")}>GALLERY</a>
+		<a href="/cp" aria-current={isCurrent("/cp")}>CP</a>
+		<a href="/prit" aria-current={isCurrent("/prit")}>PRIT</a>
+		<a href="/edith" aria-current={isCurrent("/edith")}>EDiTH</a>
+		<a href="/networking" aria-current={isCurrent("/networking")}>NETWORKING</a>
+		<a href="/people" aria-current={isCurrent("/people")}>PEOPLE</a>
+		<a href="/timeline" aria-current={isCurrent("/timeline")}>TIMELINE</a>
 	</div>
 </nav>
 
-<style>
+<style lang="scss">
+	@import "../css/screens.scss";
+
 	nav {
 		position: fixed;
 		top: 0;
 		left: 0;
 		z-index: 100;
-		height: 100vh;
+		height: avh(100);
 		width: 100%;
 		backdrop-filter: blur(40px);
 		display: grid;
@@ -63,14 +82,14 @@
 	}
 	.links-container {
 		display: grid;
-		grid-template-rows: repeat(6, 1fr);
+		grid-template-rows: repeat(8, 1fr);
 		justify-content: center;
 		align-items: center;
-		height: 100%;
+		height: calc(avh(100) - 96px);
 		width: 100vw;
 	}
 	a {
 		text-align: center;
-		font-size: 1.618rem;
+		font-size: 1.6rem;
 	}
 </style>
