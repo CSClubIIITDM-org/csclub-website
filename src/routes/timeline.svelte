@@ -14,6 +14,8 @@
 </main>
 
 <style lang="scss">
+	@import "../css/screens.scss";
+
 	main {
 		padding: 0.25rem 2rem;
 	}
@@ -33,5 +35,19 @@
 		width: 4px;
 		height: 2000px;
 		background: #1fdb95;
+	}
+
+	@include small-screens {
+		main {
+			padding: 0.25vw 2vw;
+		}
+
+		.flex {
+			flex-direction: column;
+		}
+
+		h2 {
+			font-size: 3rem;
+		}
 	}
 </style>

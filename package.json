@@ -8,10 +8,11 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-static": "^1.0.0-next.24",
-		"@sveltejs/kit": "^1.0.0-next.208",
-		"autoprefixer": "^10.4.1",
-		"sass": "^1.45.1",
-		"svelte": "^3.44.3",
+		"@sveltejs/kit": "^1.0.0-next.218",
+		"autoprefixer": "^10.4.2",
+		"postcss": "^8.4.5",
+		"sass": "^1.47.0",
+		"svelte": "^3.45.0",
 		"svelte-preprocess": "^4.10.1"
 	},
 	"dependencies": {

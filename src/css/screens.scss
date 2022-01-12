@@ -1,0 +1,28 @@
+@mixin screens($breakpoint) {
+  @media screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin small-screens {
+  @include screens(500px) {
+    @content;
+  }
+}
+
+@mixin medium-screens {
+  @include screens(900px) {
+    @content;
+  }
+}
+
+@mixin large-screens {
+  @media screen and (min-width: 900px) {
+    @content;
+  }
+}
+
+// adaptive viewport height
+@function avh($size) {
+  @return calc($size * var(--app-viewport-height, 1vh));
+}

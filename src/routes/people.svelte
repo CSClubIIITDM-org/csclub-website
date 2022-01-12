@@ -1,40 +1,123 @@
 <script>
 	import InitialScreen from "../components/InitialScreen.svelte";
+
+	let main = undefined;
+
+	// $: {
+	// 	if (main) {
+	// 		const pictures = main.querySelectorAll("picture");
+	// 		pictures.forEach((/** @type {HTMLPictureElement} */ picture) => {
+	// 			const src = picture.getAttribute("src");
+	// 			const parent = picture.parentElement;
+	//       console.log(parent);
+
+	//       picture.parentElement.style.backgroundImage = `url(${src})`;
+	// 		});
+	// 	}
+	// }
 </script>
 
 <InitialScreen>People</InitialScreen>
-<main class="center">
+<main class="center" bind:this={main}>
 	<!--  -->
 	<!-- <section></section> -->
 	<section id="faculty-advisor">
 		<h2>Faculty Advisor</h2>
 		<br />
-		<div class="picture" />
+
+		<span class="person">
+			<div class="picture">
+				<!-- <img draggable="false" src="/people/.jpg" alt="PLACEHOLDER" /> -->
+			</div>
+			<br />
+			PLACEHOLDER
+		</span>
 	</section>
 	<br /><br />
 	<section id="head-core">
 		<h2>Head Core</h2>
 		<br />
-		<div class="picture" />
+
+		<span class="person">
+			<div class="picture">
+				<img draggable="false" alt="" />
+				<!-- src="/people/CED18I051.jpg" -->
+			</div>
+			<br />
+			Subash Mylraj
+		</span>
+	</section>
+	<br /><br />
+	<section id="head-core">
+		<h2>WebOps Head</h2>
+		<br />
+
+		<span class="person">
+			<div class="picture">
+				<img draggable="false" alt="" />
+				<!-- src="/people/CS20B1078 PURU VIJAYVARGIA.jpg" -->
+			</div>
+			<br />
+			Puru Vijayvargiya
+		</span>
 	</section>
 	<br /><br />
 	<section id="core-team">
 		<h2>Core Team</h2>
 		<br />
 		<div class="flex">
-			<div class="picture" />
+			<span class="person">
+				<div class="picture">
+					<img draggable="false" alt="" />
+					<!-- src="/people/COE19B051 ANKIT KUMAR BHARTI.jpg" -->
+				</div>
+				<br />
+				Ankit Kumar
+			</span>
+
 			<span class="spacer" />
-			<div class="picture" />
+
+			<span class="person">
+				<div class="picture">
+					<img draggable="false" alt="" />
+					<!-- src="/people/CED19I015 KADLAG ATHARVA SANJAY.jpg" -->
+				</div>
+				<br />
+				Atharva Kadlag
+			</span>
+
 			<span class="spacer" />
-			<div class="picture" />
+
+			<span class="person">
+				<div class="picture">
+					<img draggable="false" alt="" />
+					<!-- src="/people/CED19I042 G V SANJAY REDDY.jpg" -->
+				</div>
+				<br />
+				G V Sanjay Reddy
+			</span>
 		</div>
 		<br /><br />
 		<div class="flex">
-			<div class="picture" />
+			<span class="person">
+				<div class="picture">
+					<img draggable="false" alt="" />
+					<!-- src="/people/COE19B038 SREENIVAS DHEERAJ MARRI.jpg" -->
+				</div>
+				<br />
+				Sreenivas Dheeraj
+			</span>
+
 			<span class="spacer" />
-			<div class="picture" />
-			<span class="spacer" />
-			<div class="picture" />
+
+			<span class="person">
+				<div class="picture">
+					<img draggable="false" alt="" />
+					<!-- src="/people/CED19I028 SUMIT KUMAR.jpg" -->
+				</div>
+				<br />
+				Sumit Kumar
+			</span>
 		</div>
 	</section>
 	<br /><br />
@@ -45,15 +128,58 @@
 			<h2>CP</h2>
 			<br />
 			<div class="flex">
-				<div class="picture" />
+				<span class="person">
+					<div class="picture">
+						<img draggable="false" alt="" />
+						<!-- src="/people/CS20B1007 PEDDISETTY JASHWANTH.jpeg" -->
+					</div>
+					<br />
+					Jashwanth
+				</span>
+
 				<span class="spacer" />
-				<div class="picture" />
+
+				<span class="person">
+					<div class="picture">
+						<img draggable="false" alt="" />
+						<!-- src="/people/CS20B1075 CHEKKA JITIN KRISHNA.jpeg" -->
+					</div>
+					<br />
+					Jitin
+				</span>
+
+				<span class="spacer" />
+
+				<span class="person">
+					<div class="picture">
+						<img draggable="false" alt="" />
+						<!-- src="/people/CS20B1029 SHYAM SUNDAR R.jpg" -->
+					</div>
+					<br />
+					R Shyam Sundar
+				</span>
 			</div>
 			<br /><br />
 			<div class="flex">
-				<div class="picture" />
+				<span class="person">
+					<div class="picture">
+						<img draggable="false" alt="" />
+						<!-- src="/people/EC20B1072 ROHAIL ALAM.jpg" -->
+					</div>
+					<br />
+					Rohail Alam
+				</span>
+
 				<span class="spacer" />
-				<div class="picture" />
+
+				<span class="person">
+					<div class="picture">
+						<img draggable="false" alt="" />
+						<!-- src="/people/CS20B1041 SOMASHEKHAR.jpeg" -->
+					</div>
+					<br />
+					Somashekhar
+				</span>
 			</div>
 		</section>
 		<br /><br />
@@ -61,15 +187,47 @@
 			<h2>Edith</h2>
 			<br />
 			<div class="flex">
-				<div class="picture" />
+				<span class="person">
+					<div class="picture">
+						<img draggable="false" alt="" />
+						<!-- src="/people/CS20B1013 JAGADEESHAN.jpg" -->
+					</div>
+					<br />
+					Jagadeeshan S
+				</span>
+
 				<span class="spacer" />
-				<div class="picture" />
+
+				<span class="person">
+					<div class="picture">
+						<img draggable="false" alt="" />
+						<!-- src="/people/CS20B1030 MARIYAM.jpeg" -->
+					</div>
+					<br />
+					Mariyam Joory
+				</span>
 			</div>
 			<br /><br />
 			<div class="flex">
-				<div class="picture" />
+				<span class="person">
+					<div class="picture">
+						<img draggable="false" alt="" />
+						<!-- src="/people/CS20B1068 NITHISH VASANTH.jfif" -->
+					</div>
+					<br />
+					Nithish Vasanth
+				</span>
+
 				<span class="spacer" />
-				<div class="picture" />
+
+				<span class="person">
+					<div class="picture">
+						<img alt="" />
+						<!-- src="/people/CS20B1108 YERRAMSETTI V S N SAI MOHITH.jpeg" -->
+					</div>
+					<br />
+					Yerramsetti V S N Sai Mohith
+				</span>
 			</div>
 		</section>
 		<br /><br />
@@ -77,15 +235,25 @@
 			<h2>Networking</h2>
 			<br />
 			<div class="flex">
-				<div class="picture" />
+				<span class="person">
+					<div class="picture">
+						<img draggable="false" alt="" />
+						<!-- src="/people/CS20B1119 DHEERAJ KUMAR.jpg" -->
+					</div>
+					<br />
+					Dheeraj Kumar
+				</span>
+
 				<span class="spacer" />
-				<div class="picture" />
-			</div>
-			<br /><br />
-			<div class="flex">
-				<div class="picture" />
-				<span class="spacer" />
-				<div class="picture" />
+
+				<span class="person">
+					<div class="picture">
+						<img draggable="false" alt="" />
+						<!-- src="/people/CS20B1080 KHUSHAL GAUTAM.jpg" -->
+					</div>
+					<br />
+					Khushal Gautam
+				</span>
 			</div>
 		</section>
 		<br /><br />
@@ -93,15 +261,25 @@
 			<h2>PRIT</h2>
 			<br />
 			<div class="flex">
-				<div class="picture" />
+				<span class="person">
+					<div class="picture">
+						<img draggable="false" alt="" />
+						<!-- src="/people/CS20B1097 HIMANSHU.jpg" -->
+					</div>
+					<br />
+					Himanshu Malviya
+				</span>
+
 				<span class="spacer" />
-				<div class="picture" />
-			</div>
-			<br /><br />
-			<div class="flex">
-				<div class="picture" />
-				<span class="spacer" />
-				<div class="picture" />
+
+				<span class="person">
+					<div class="picture">
+						<img draggable="false" alt="" />
+						<!-- src="/people/EC20B1059 YASH AGRAWAL.jpg" -->
+					</div>
+					<br />
+					Yash Agrawal
+				</span>
 			</div>
 		</section>
 		<br /><br />
@@ -109,15 +287,43 @@
 			<h2>Web Development Team</h2>
 			<br />
 			<div class="flex">
-				<div class="picture" />
+				<span class="person">
+					<div class="picture">
+						<!-- <img draggable="false" src="/people/.jpg" alt="PLACEHOLDER" /> -->
+					</div>
+					<br />
+					PLACEHOLDER
+				</span>
+
 				<span class="spacer" />
-				<div class="picture" />
+
+				<span class="person">
+					<div class="picture">
+						<!-- <img draggable="false" src="/people/.jpg" alt="PLACEHOLDER" /> -->
+					</div>
+					<br />
+					PLACEHOLDER
+				</span>
 			</div>
 			<br /><br />
 			<div class="flex">
-				<div class="picture" />
+				<span class="person">
+					<div class="picture">
+						<!-- <img draggable="false" src="/people/.jpg" alt="PLACEHOLDER" /> -->
+					</div>
+					<br />
+					PLACEHOLDER
+				</span>
+
 				<span class="spacer" />
-				<div class="picture" />
+
+				<span class="person">
+					<div class="picture">
+						<!-- <img draggable="false" src="/people/.jpg" alt="PLACEHOLDER" /> -->
+					</div>
+					<br />
+					PLACEHOLDER
+				</span>
 			</div>
 		</section>
 	</section>
@@ -125,6 +331,8 @@
 </main>
 
 <style lang="scss">
+	@import "../css/screens.scss";
+
 	main {
 		padding: 0.25rem 2rem;
 	}
@@ -155,12 +363,30 @@
 		border: 1px solid var(--app-color-primary);
 		background: var(--app-color-primary);
 		margin: 0 auto;
+		z-index: 2;
 
 		img {
-			width: auto;
+			// from https://stackoverflow.com/a/40466110
+			object-fit: cover;
+			border-radius: inherit;
+			width: inherit;
 			height: inherit;
 			margin: 0;
 			box-sizing: border-box;
+		}
+	}
+
+	@include small-screens {
+		main {
+			padding: 0.25vw 2vw;
+		}
+
+		.flex {
+			flex-direction: column;
+		}
+
+		h2 {
+			font-size: 3rem;
 		}
 	}
 </style>

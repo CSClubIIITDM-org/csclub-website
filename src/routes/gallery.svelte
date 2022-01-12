@@ -43,7 +43,9 @@
 	</div>
 </div>
 
-<style>
+<style lang="scss">
+	@import "../css/screens.scss";
+
 	.gallery-tiles {
 		padding-top: 5%;
 		padding-left: 5%;
@@ -90,5 +92,19 @@
 		padding: 5%;
 		margin-top: 1%;
 		height: 300px;
+	}
+
+	@include small-screens {
+		main {
+			padding: 0.25vw 2vw;
+		}
+
+		.flex {
+			flex-direction: column;
+		}
+
+		h2 {
+			font-size: 3rem;
+		}
 	}
 </style>

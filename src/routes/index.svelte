@@ -26,12 +26,16 @@
 		<h2>Our Events</h2>
 		<br />
 		<div class="our-events">
-			<Card>Basics of HTML/CSS</Card>
-			<Card>Cyber Security Awareness</Card>
-			<Card>Cyber Security Awareness</Card>
-			<Card>Problem Solving Session</Card>
-			<Card>Introduction to Competitive Programming</Card>
-			<Card>Introduction to Competitive Programming</Card>
+			<div>
+				<Card>Basics of HTML/CSS</Card>
+				<Card>Cyber Security Awareness</Card>
+				<Card>Cyber Security Awareness</Card>
+			</div>
+			<div>
+				<Card>Problem Solving Session</Card>
+				<Card>Introduction to Competitive Programming</Card>
+				<Card>Introduction to Competitive Programming</Card>
+			</div>
 		</div>
 	</section>
 	<br /><br />
@@ -52,6 +56,7 @@
 </main>
 
 <style lang="scss">
+	@import "../css/screens.scss";
 	main {
 		padding: 0.25rem 2rem;
 	}
@@ -75,15 +80,33 @@
 		overflow: auto;
 		box-sizing: border-box;
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: center;
-		padding: 0.5rem;
-		margin: 0.5rem;
 
-		* {
-			padding: 5rem;
+		div {
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+		}
+	}
+
+	@include small-screens {
+		main {
+			padding: 0.25vw 2vw;
+		}
+
+		.flex {
+			flex-direction: column;
+		}
+
+		h2 {
+			font-size: 3rem;
+		}
+
+		#about-us {
+			font-size: 1.15rem;
 		}
 	}
 </style>

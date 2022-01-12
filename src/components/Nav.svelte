@@ -5,54 +5,25 @@
 	import MobileNav from "./MobileNav.svelte";
 
 	let isMobileNavOpen = false;
+
+	/** @param {string} path */
+
+	const isCurrent = (path) => path === $page.url.pathname;
 </script>
 
-<header>
+<header class:mobile-nav-open={isMobileNavOpen}>
 	<!-- <img src="../../static/" /> -->
 	<div class="logo-alt" />
 	<span />
 	<nav>
-		<a href="/" aria-current={$page.path === "/" ? "page" : "false"}>HOME</a>
-
-		<a
-			href="/gallery"
-			aria-current={$page.path === "/gallery" ? "page" : "false"}
-		>
-			GALLERY
-		</a>
-
-		<a href="/cp" aria-current={$page.path === "/cp" ? "page" : "false"}>
-			CP
-		</a>
-
-		<a href="/prit" aria-current={$page.path === "/prit" ? "page" : "false"}>
-			PRIT
-		</a>
-
-		<a href="/edith" aria-current={$page.path === "/edith" ? "page" : "false"}>
-			EDiTH
-		</a>
-
-		<a
-			href="/networking"
-			aria-current={$page.path === "/networking" ? "page" : "false"}
-		>
-			NETWORKING
-		</a>
-
-		<a
-			href="/people"
-			aria-current={$page.path === "/people" ? "page" : "false"}
-		>
-			PEOPLE
-		</a>
-
-		<a
-			href="/timeline"
-			aria-current={$page.path === "/timeline" ? "page" : "false"}
-		>
-			TIMELINE
-		</a>
+		<a href="/" aria-current={isCurrent("/")}>HOME</a>
+		<a href="/gallery" aria-current={isCurrent("/gallery")}>GALLERY</a>
+		<a href="/cp" aria-current={isCurrent("/cp")}>CP</a>
+		<a href="/prit" aria-current={isCurrent("/prit")}>PRIT</a>
+		<a href="/edith" aria-current={isCurrent("/edith")}>EDiTH</a>
+		<a href="/networking" aria-current={isCurrent("/networking")}>NETWORKING</a>
+		<a href="/people" aria-current={isCurrent("/people")}>PEOPLE</a>
+		<a href="/timeline" aria-current={isCurrent("/timeline")}>TIMELINE</a>
 	</nav>
 
 	<div class="buttons">
@@ -63,10 +34,15 @@
 </header>
 
 {#if isMobileNavOpen}
-	<MobileNav on:close={() => (isMobileNavOpen = false)} current={$page.path} />
+	<MobileNav
+		on:close={() => (isMobileNavOpen = false)}
+		current={$page.url.pathname}
+	/>
 {/if}
 
-<style>
+<style lang="scss">
+	@import "../css/screens.scss";
+
 	header {
 		position: sticky;
 		z-index: 999999;
@@ -120,7 +96,22 @@
 	.open-menu:focus {
 		background-color: rgba(var(--app-color-dark-rgb), 0.2);
 	}
-	@media screen and (max-width: 900px) {
+	.mobile-nav-open {
+		@keyframes fade-out {
+			0% {
+				opacity: 1;
+			}
+			100% {
+				opacity: 0;
+			}
+		}
+
+		opacity: 0;
+		animation: fade-out 0.5s;
+		pointer-events: none;
+	}
+
+	@include small-screens {
 		.open-menu {
 			display: grid;
 		}

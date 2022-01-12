@@ -14,7 +14,9 @@
 	{/if}
 </div>
 
-<style>
+<style lang="scss">
+	@import "../css/screens.scss";
+
 	.card {
 		margin: 0.5rem;
 		word-wrap: break-word;
@@ -25,9 +27,11 @@
 		align-items: center;
 		justify-content: center;
 		height: 10rem;
+		min-width: 50vw;
+		max-width: 50vw;
 		background: var(--app-gradient-light);
 		border-radius: 40px;
-		padding: 2.25rem;
+		padding: 3rem !important;
 		box-sizing: border-box;
 		flex: 1 1 auto;
 	}
@@ -44,5 +48,19 @@
 
 	.spacer {
 		flex: 1 1 auto;
+	}
+
+	@include small-screens {
+		.card {
+			height: 8rem;
+			padding: 0.5rem;
+			font-size: 1.2rem;
+			min-width: 75vw;
+			max-width: 75vw;
+		}
+
+		.content {
+			margin: 0 0.25rem;
+		}
 	}
 </style>

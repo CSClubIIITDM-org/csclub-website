@@ -102,7 +102,7 @@ button:disabled {
 	cursor: default;
 }
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
 	background-color: transparent;
 	width: 15px;
 }
@@ -115,7 +115,7 @@ button:disabled {
 }
 ::-webkit-scrollbar-thumb:hover {
 	background-color: rgba(var(--app-color-dark-rgb), 1);
-} */
+}
 
 *::selection {
 	background-color: rgba(var(--app-color-primary-rgb), 0.4);
@@ -150,10 +150,6 @@ a[href]:focus-visible {
 }
 
 @media screen and (max-width: 1100px) {
-	#svelte {
-		width: 95% !important;
-	}
-
 	::-webkit-scrollbar,
 	::-webkit-scrollbar-thumb,
 	::-webkit-scrollbar-thumb:hover {
