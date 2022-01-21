@@ -28,7 +28,7 @@
 	</div>
 
 	<p class="copyright">
-		Copyrights © 2020 | All Rights Reserved | Done by
+		Copyrights © {new Date().getFullYear()} | All Rights Reserved | Done by
 		<!-- svelte-ignore a11y-invalid-attribute -->
 		<a href="#">Web Team</a>
 	</p>

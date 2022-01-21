@@ -1,24 +1,27 @@
 <script>
 	import InitialScreen from "../components/InitialScreen.svelte";
 
-	let main = undefined;
+	let isLazysizesImported = false;
 
-	// $: {
-	// 	if (main) {
-	// 		const pictures = main.querySelectorAll("picture");
-	// 		pictures.forEach((/** @type {HTMLPictureElement} */ picture) => {
-	// 			const src = picture.getAttribute("src");
-	// 			const parent = picture.parentElement;
-	//       console.log(parent);
+	/**
+	 * @param {HTMLImageElement} node
+	 */
+	export function lazy(node) {
+		const srcVal = node.src;
+		node.src = "";
+		node.dataset.src = srcVal;
 
-	//       picture.parentElement.style.backgroundImage = `url(${src})`;
-	// 		});
-	// 	}
-	// }
+		node.classList.add("lazyload");
+
+		if (!isLazysizesImported) {
+			import("lazysizes");
+			isLazysizesImported = true;
+		}
+	}
 </script>
 
 <InitialScreen>People</InitialScreen>
-<main class="center" bind:this={main}>
+<main class="center">
 	<!--  -->
 	<!-- <section></section> -->
 	<section id="faculty-advisor">
@@ -27,13 +30,15 @@
 
 		<span class="person">
 			<div class="picture">
-				<!-- <img draggable="false" src="/people/.webp" alt="PLACEHOLDER" /> -->
+				<!-- <img use:lazy src="/people/.webp" alt="PLACEHOLDER" /> -->
 			</div>
 			<br />
 			PLACEHOLDER
 		</span>
 	</section>
+
 	<br /><br />
+
 	<section id="head-core">
 		<h2>Head Core</h2>
 		<br />
@@ -41,7 +46,7 @@
 		<span class="person">
 			<div class="picture">
 				<img draggable="false" alt="" />
-				<!-- src="/people/CED18I051.webp" -->
+				<img src="/people/subash.webp" alt="Subash Mylraj" use:lazy />
 			</div>
 			<br />
 			Subash Mylraj
@@ -54,22 +59,32 @@
 
 		<span class="person">
 			<div class="picture">
-				<img draggable="false" alt="" />
-				<!-- src="/people/CS20B1078 PURU VIJAYVARGIA.webp" -->
+				<img
+					src="/people/puru-vijayvargia.webp"
+					alt="Puru Vijayvargia"
+					use:lazy
+				/>
 			</div>
 			<br />
 			Puru Vijayvargiya
 		</span>
 	</section>
+
 	<br /><br />
+
 	<section id="core-team">
 		<h2>Core Team</h2>
+
 		<br />
+
 		<div class="flex">
 			<span class="person">
 				<div class="picture">
-					<img draggable="false" alt="" />
-					<!-- src="/people/COE19B051 ANKIT KUMAR BHARTI.webp" -->
+					<img
+						src="/people/ankit-kumar-bharti.webp"
+						alt="Ankit Kumar"
+						use:lazy
+					/>
 				</div>
 				<br />
 				Ankit Kumar
@@ -79,8 +94,11 @@
 
 			<span class="person">
 				<div class="picture">
-					<img draggable="false" alt="" />
-					<!-- src="/people/CED19I015 KADLAG ATHARVA SANJAY.webp" -->
+					<img
+						src="/people/atharva-kadlag.webp"
+						alt="Atharva Kadlag"
+						use:lazy
+					/>
 				</div>
 				<br />
 				Atharva Kadlag
@@ -90,8 +108,7 @@
 
 			<span class="person">
 				<div class="picture">
-					<img draggable="false" alt="" />
-					<!-- src="/people/CED19I042 G V SANJAY REDDY.webp" -->
+					<img src="/people/sanjay-reddy.webp" alt="Sanjay Reddy" use:lazy />
 				</div>
 				<br />
 				G V Sanjay Reddy
@@ -101,8 +118,11 @@
 		<div class="flex">
 			<span class="person">
 				<div class="picture">
-					<img draggable="false" alt="" />
-					<!-- src="/people/COE19B038 SREENIVAS DHEERAJ MARRI.webp" -->
+					<img
+						src="/people/sreenivas-dheeraj.webp"
+						alt="Sreenivas Dheeraj"
+						use:lazy
+					/>
 				</div>
 				<br />
 				Sreenivas Dheeraj
@@ -112,8 +132,7 @@
 
 			<span class="person">
 				<div class="picture">
-					<img draggable="false" alt="" />
-					<!-- src="/people/CED19I028 SUMIT KUMAR.webp" -->
+					<img src="/people/sumit-kumar.webp" alt="Sumit Kumar" use:lazy />
 				</div>
 				<br />
 				Sumit Kumar
@@ -130,8 +149,11 @@
 			<div class="flex">
 				<span class="person">
 					<div class="picture">
-						<img draggable="false" alt="" />
-						<!-- src="/people/CS20B1007 PEDDISETTY JASHWANTH.webp" -->
+						<img
+							src="/people/jaswanth-peddisetti.webp"
+							alt="Jashwanth"
+							use:lazy
+						/>
 					</div>
 					<br />
 					Jashwanth
@@ -141,8 +163,11 @@
 
 				<span class="person">
 					<div class="picture">
-						<img draggable="false" alt="" />
-						<!-- src="/people/CS20B1075 CHEKKA JITIN KRISHNA.webp" -->
+						<img
+							src="/people/chekka-jitin-krishna.webp"
+							alt="Chekka Jitin Krishna"
+							use:lazy
+						/>
 					</div>
 					<br />
 					Jitin
@@ -152,8 +177,7 @@
 
 				<span class="person">
 					<div class="picture">
-						<img draggable="false" alt="" />
-						<!-- src="/people/CS20B1029 SHYAM SUNDAR R.webp" -->
+						<img src="/people/shyam-sundar.webp" alt="Shyam Sundar" use:lazy />
 					</div>
 					<br />
 					R Shyam Sundar
@@ -163,8 +187,7 @@
 			<div class="flex">
 				<span class="person">
 					<div class="picture">
-						<img draggable="false" alt="" />
-						<!-- src="/people/EC20B1072 ROHAIL ALAM.webp" -->
+						<img src="/people/rohail-alam.webp" alt="Rohail alam" use:lazy />
 					</div>
 					<br />
 					Rohail Alam
@@ -174,8 +197,7 @@
 
 				<span class="person">
 					<div class="picture">
-						<img draggable="false" alt="" />
-						<!-- src="/people/CS20B1041 SOMASHEKHAR.webp" -->
+						<img src="/people/somashekhar.webp" alt="Somashekhar" use:lazy />
 					</div>
 					<br />
 					Somashekhar
@@ -189,8 +211,7 @@
 			<div class="flex">
 				<span class="person">
 					<div class="picture">
-						<img draggable="false" alt="" />
-						<!-- src="/people/CS20B1013 JAGADEESHAN.webp" -->
+						<img src="/people/jagadeeshan.webp" alt="Jagadeeshan" use:lazy />
 					</div>
 					<br />
 					Jagadeeshan S
@@ -200,8 +221,7 @@
 
 				<span class="person">
 					<div class="picture">
-						<img draggable="false" alt="" />
-						<!-- src="/people/CS20B1030 MARIYAM.webp" -->
+						<img src="/people/mariyam.webp" alt="Mariyam" use:lazy />
 					</div>
 					<br />
 					Mariyam Joory
@@ -211,8 +231,11 @@
 			<div class="flex">
 				<span class="person">
 					<div class="picture">
-						<img draggable="false" alt="" />
-						<!-- src="/people/CS20B1068 NITHISH VASANTH.webp" -->
+						<img
+							src="/people/nithish-vasanth.webp"
+							alt="Nithish Vasanth"
+							use:lazy
+						/>
 					</div>
 					<br />
 					Nithish Vasanth
@@ -222,8 +245,7 @@
 
 				<span class="person">
 					<div class="picture">
-						<img alt="" />
-						<!-- src="/people/CS20B1108 YERRAMSETTI V S N SAI MOHITH.webp" -->
+						<img src="/people/mohith.webp" alt="Mohith" use:lazy />
 					</div>
 					<br />
 					Yerramsetti V S N Sai Mohith
@@ -237,8 +259,11 @@
 			<div class="flex">
 				<span class="person">
 					<div class="picture">
-						<img draggable="false" alt="" />
-						<!-- src="/people/CS20B1119 DHEERAJ KUMAR.webp" -->
+						<img
+							src="/people/dheeraj-kumar.webp"
+							alt="Dheeraj Kumar"
+							use:lazy
+						/>
 					</div>
 					<br />
 					Dheeraj Kumar
@@ -248,8 +273,11 @@
 
 				<span class="person">
 					<div class="picture">
-						<img draggable="false" alt="" />
-						<!-- src="/people/CS20B1080 KHUSHAL GAUTAM.webp" -->
+						<img
+							src="/people/khushal-gautam.webp"
+							alt="Khushal Gautam"
+							use:lazy
+						/>
 					</div>
 					<br />
 					Khushal Gautam
@@ -263,8 +291,7 @@
 			<div class="flex">
 				<span class="person">
 					<div class="picture">
-						<img draggable="false" alt="" />
-						<!-- src="/people/CS20B1097 HIMANSHU.webp" -->
+						<img src="/people/himanshu.webp" alt="Himanshu" use:lazy />
 					</div>
 					<br />
 					Himanshu Malviya
@@ -274,8 +301,7 @@
 
 				<span class="person">
 					<div class="picture">
-						<img draggable="false" alt="" />
-						<!-- src="/people/EC20B1059 YASH AGRAWAL.webp" -->
+						<img src="/people/yash-agarwal.webp" alt="Yash Agarwal" use:lazy />
 					</div>
 					<br />
 					Yash Agrawal
@@ -360,7 +386,7 @@
 		align-items: center;
 		justify-content: center;
 		border-radius: 50%;
-		border: 1px solid var(--app-color-primary);
+
 		background: var(--app-color-primary);
 		margin: 0 auto;
 		z-index: 2;
@@ -369,7 +395,7 @@
 			// from https://stackoverflow.com/a/40466110
 			object-fit: cover;
 			border-radius: inherit;
-			width: inherit;
+			width: 100%;
 			height: inherit;
 			margin: 0;
 			box-sizing: border-box;
