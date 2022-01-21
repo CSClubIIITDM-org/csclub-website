@@ -27,7 +27,7 @@
 
 		<span class="person">
 			<div class="picture">
-				<!-- <img draggable="false" src="/people/.jpg" alt="PLACEHOLDER" /> -->
+				<!-- <img draggable="false" src="/people/.webp" alt="PLACEHOLDER" /> -->
 			</div>
 			<br />
 			PLACEHOLDER
@@ -41,7 +41,7 @@
 		<span class="person">
 			<div class="picture">
 				<img draggable="false" alt="" />
-				<!-- src="/people/CED18I051.jpg" -->
+				<!-- src="/people/CED18I051.webp" -->
 			</div>
 			<br />
 			Subash Mylraj
@@ -55,7 +55,7 @@
 		<span class="person">
 			<div class="picture">
 				<img draggable="false" alt="" />
-				<!-- src="/people/CS20B1078 PURU VIJAYVARGIA.jpg" -->
+				<!-- src="/people/CS20B1078 PURU VIJAYVARGIA.webp" -->
 			</div>
 			<br />
 			Puru Vijayvargiya
@@ -69,7 +69,7 @@
 			<span class="person">
 				<div class="picture">
 					<img draggable="false" alt="" />
-					<!-- src="/people/COE19B051 ANKIT KUMAR BHARTI.jpg" -->
+					<!-- src="/people/COE19B051 ANKIT KUMAR BHARTI.webp" -->
 				</div>
 				<br />
 				Ankit Kumar
@@ -80,7 +80,7 @@
 			<span class="person">
 				<div class="picture">
 					<img draggable="false" alt="" />
-					<!-- src="/people/CED19I015 KADLAG ATHARVA SANJAY.jpg" -->
+					<!-- src="/people/CED19I015 KADLAG ATHARVA SANJAY.webp" -->
 				</div>
 				<br />
 				Atharva Kadlag
@@ -91,7 +91,7 @@
 			<span class="person">
 				<div class="picture">
 					<img draggable="false" alt="" />
-					<!-- src="/people/CED19I042 G V SANJAY REDDY.jpg" -->
+					<!-- src="/people/CED19I042 G V SANJAY REDDY.webp" -->
 				</div>
 				<br />
 				G V Sanjay Reddy
@@ -102,7 +102,7 @@
 			<span class="person">
 				<div class="picture">
 					<img draggable="false" alt="" />
-					<!-- src="/people/COE19B038 SREENIVAS DHEERAJ MARRI.jpg" -->
+					<!-- src="/people/COE19B038 SREENIVAS DHEERAJ MARRI.webp" -->
 				</div>
 				<br />
 				Sreenivas Dheeraj
@@ -113,7 +113,7 @@
 			<span class="person">
 				<div class="picture">
 					<img draggable="false" alt="" />
-					<!-- src="/people/CED19I028 SUMIT KUMAR.jpg" -->
+					<!-- src="/people/CED19I028 SUMIT KUMAR.webp" -->
 				</div>
 				<br />
 				Sumit Kumar
@@ -131,7 +131,7 @@
 				<span class="person">
 					<div class="picture">
 						<img draggable="false" alt="" />
-						<!-- src="/people/CS20B1007 PEDDISETTY JASHWANTH.jpeg" -->
+						<!-- src="/people/CS20B1007 PEDDISETTY JASHWANTH.webp" -->
 					</div>
 					<br />
 					Jashwanth
@@ -142,7 +142,7 @@
 				<span class="person">
 					<div class="picture">
 						<img draggable="false" alt="" />
-						<!-- src="/people/CS20B1075 CHEKKA JITIN KRISHNA.jpeg" -->
+						<!-- src="/people/CS20B1075 CHEKKA JITIN KRISHNA.webp" -->
 					</div>
 					<br />
 					Jitin
@@ -153,7 +153,7 @@
 				<span class="person">
 					<div class="picture">
 						<img draggable="false" alt="" />
-						<!-- src="/people/CS20B1029 SHYAM SUNDAR R.jpg" -->
+						<!-- src="/people/CS20B1029 SHYAM SUNDAR R.webp" -->
 					</div>
 					<br />
 					R Shyam Sundar
@@ -164,7 +164,7 @@
 				<span class="person">
 					<div class="picture">
 						<img draggable="false" alt="" />
-						<!-- src="/people/EC20B1072 ROHAIL ALAM.jpg" -->
+						<!-- src="/people/EC20B1072 ROHAIL ALAM.webp" -->
 					</div>
 					<br />
 					Rohail Alam
@@ -175,7 +175,7 @@
 				<span class="person">
 					<div class="picture">
 						<img draggable="false" alt="" />
-						<!-- src="/people/CS20B1041 SOMASHEKHAR.jpeg" -->
+						<!-- src="/people/CS20B1041 SOMASHEKHAR.webp" -->
 					</div>
 					<br />
 					Somashekhar
@@ -190,7 +190,7 @@
 				<span class="person">
 					<div class="picture">
 						<img draggable="false" alt="" />
-						<!-- src="/people/CS20B1013 JAGADEESHAN.jpg" -->
+						<!-- src="/people/CS20B1013 JAGADEESHAN.webp" -->
 					</div>
 					<br />
 					Jagadeeshan S
@@ -201,7 +201,7 @@
 				<span class="person">
 					<div class="picture">
 						<img draggable="false" alt="" />
-						<!-- src="/people/CS20B1030 MARIYAM.jpeg" -->
+						<!-- src="/people/CS20B1030 MARIYAM.webp" -->
 					</div>
 					<br />
 					Mariyam Joory
@@ -212,7 +212,7 @@
 				<span class="person">
 					<div class="picture">
 						<img draggable="false" alt="" />
-						<!-- src="/people/CS20B1068 NITHISH VASANTH.jfif" -->
+						<!-- src="/people/CS20B1068 NITHISH VASANTH.webp" -->
 					</div>
 					<br />
 					Nithish Vasanth
@@ -223,7 +223,7 @@
 				<span class="person">
 					<div class="picture">
 						<img alt="" />
-						<!-- src="/people/CS20B1108 YERRAMSETTI V S N SAI MOHITH.jpeg" -->
+						<!-- src="/people/CS20B1108 YERRAMSETTI V S N SAI MOHITH.webp" -->
 					</div>
 					<br />
 					Yerramsetti V S N Sai Mohith
@@ -238,7 +238,7 @@
 				<span class="person">
 					<div class="picture">
 						<img draggable="false" alt="" />
-						<!-- src="/people/CS20B1119 DHEERAJ KUMAR.jpg" -->
+						<!-- src="/people/CS20B1119 DHEERAJ KUMAR.webp" -->
 					</div>
 					<br />
 					Dheeraj Kumar
@@ -249,7 +249,7 @@
 				<span class="person">
 					<div class="picture">
 						<img draggable="false" alt="" />
-						<!-- src="/people/CS20B1080 KHUSHAL GAUTAM.jpg" -->
+						<!-- src="/people/CS20B1080 KHUSHAL GAUTAM.webp" -->
 					</div>
 					<br />
 					Khushal Gautam
@@ -264,7 +264,7 @@
 				<span class="person">
 					<div class="picture">
 						<img draggable="false" alt="" />
-						<!-- src="/people/CS20B1097 HIMANSHU.jpg" -->
+						<!-- src="/people/CS20B1097 HIMANSHU.webp" -->
 					</div>
 					<br />
 					Himanshu Malviya
@@ -275,7 +275,7 @@
 				<span class="person">
 					<div class="picture">
 						<img draggable="false" alt="" />
-						<!-- src="/people/EC20B1059 YASH AGRAWAL.jpg" -->
+						<!-- src="/people/EC20B1059 YASH AGRAWAL.webp" -->
 					</div>
 					<br />
 					Yash Agrawal
@@ -289,7 +289,7 @@
 			<div class="flex">
 				<span class="person">
 					<div class="picture">
-						<!-- <img draggable="false" src="/people/.jpg" alt="PLACEHOLDER" /> -->
+						<!-- <img draggable="false" src="/people/.webp" alt="PLACEHOLDER" /> -->
 					</div>
 					<br />
 					PLACEHOLDER
@@ -299,7 +299,7 @@
 
 				<span class="person">
 					<div class="picture">
-						<!-- <img draggable="false" src="/people/.jpg" alt="PLACEHOLDER" /> -->
+						<!-- <img draggable="false" src="/people/.webp" alt="PLACEHOLDER" /> -->
 					</div>
 					<br />
 					PLACEHOLDER
@@ -309,7 +309,7 @@
 			<div class="flex">
 				<span class="person">
 					<div class="picture">
-						<!-- <img draggable="false" src="/people/.jpg" alt="PLACEHOLDER" /> -->
+						<!-- <img draggable="false" src="/people/.webp" alt="PLACEHOLDER" /> -->
 					</div>
 					<br />
 					PLACEHOLDER
@@ -319,7 +319,7 @@
 
 				<span class="person">
 					<div class="picture">
-						<!-- <img draggable="false" src="/people/.jpg" alt="PLACEHOLDER" /> -->
+						<!-- <img draggable="false" src="/people/.webp" alt="PLACEHOLDER" /> -->
 					</div>
 					<br />
 					PLACEHOLDER
