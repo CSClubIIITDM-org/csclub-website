@@ -3,7 +3,7 @@
 	import InitialScreen from "../components/InitialScreen.svelte";
 </script>
 
-<InitialScreen>Competetive Programming</InitialScreen>
+<InitialScreen>Competitive Programming</InitialScreen>
 <main>
 	<section id="our-aim" class="flex">
 		<div>
@@ -28,12 +28,15 @@
 		<br />
 		<div class="our-events">
 			<div>
-				<Card>HTML and Web Dev Session</Card>
-				<Card>Cyber Security Awareness</Card>
+				<Card>Learn DSA 1.0</Card>
+				<Card>Learn DSA 2.0</Card>
+				<Card>Learn DSA 3.0</Card>
+				<Card>Codechef IIITDMK Chapter Induction Ceremony</Card>
 			</div>
 			<div>
-				<Card>Problem Solving Session</Card>
-				<Card>Introduction to Competitive Programming</Card>
+				<Card>THE CODETRIX</Card>
+				<Card>THE CODETRIX - 2</Card>
+				<Card>Get Set Code - Only for First Years</Card>
 			</div>
 		</div>
 	</section>

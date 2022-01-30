@@ -13,7 +13,12 @@
 
 <header class:mobile-nav-open={isMobileNavOpen}>
 	<!-- <img src="../../static/" /> -->
-	<div class="logo-alt" />
+	<div class="logo-alt">
+		<img src="/insignia.png" alt="Insignia" />
+		<hr />
+		<img src="/logo.png" alt="Logo" />
+		<span>CS Club</span>
+	</div>
 	<span />
 	<nav>
 		<a href="/" aria-current={isCurrent("/")}>HOME</a>
@@ -75,11 +80,22 @@
 		color: var(--app-color-dark);
 	}
 	.logo-alt {
-		--size: 60px;
-		height: var(--size);
-		width: var(--size);
-		background: var(--app-color-primary);
-		border-radius: 50%;
+		color: var(--app-color-primary);
+		display: flex;
+		font-size: 2.5rem;
+
+		hr {
+			margin-top: 15px;
+			margin-bottom: 15px;
+			border: 1px solid var(--app-color-primary);
+		}
+
+		img {
+			height: 60px;
+			width: 60px;
+			margin-left: 5px;
+			margin-right: 5px;
+		}
 	}
 	.buttons {
 		padding: 0 1rem;
@@ -116,6 +132,12 @@
 			display: grid;
 		}
 		nav > a {
+			display: none;
+		}
+	}
+
+	@media (max-width: 1045px) {
+		.logo-alt span {
 			display: none;
 		}
 	}

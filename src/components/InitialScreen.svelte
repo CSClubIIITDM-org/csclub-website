@@ -21,7 +21,7 @@
 
 	.heading h1 {
 		text-align: center;
-		font-size: 125px;
+		font-size: 4.5rem;
 		font-family: var(--app-heading-font-family);
 		font-style: normal;
 	}

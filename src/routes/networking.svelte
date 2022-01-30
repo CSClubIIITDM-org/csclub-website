@@ -1,4 +1,6 @@
 <script>
+	import { mdiDiscord, mdiInstagram, mdiLinkedin, mdiYoutube } from "@mdi/js";
+	import AppIcon from "../components/AppIcon.svelte";
 	import InitialScreen from "../components/InitialScreen.svelte";
 
 	// const carouselPhotos = [
@@ -160,6 +162,53 @@
 		</div>
 	</section>
 	<br /><br />
+	<section id="social-media-handles">
+		<h2>Find Us On...</h2>
+		<br />
+		<div class="flex center social-handles">
+			<div>
+				<a
+					href="https://discord.gg/WuRCnpgwN5"
+					target="_blank"
+					rel="noopener"
+					title="Discord"
+				>
+					<AppIcon fill="#fff" path={mdiDiscord} size={80} />
+				</a>
+			</div>
+			<div>
+				<a
+					href="https://www.instagram.com/cs.club.iiitdm/"
+					target="_blank"
+					rel="noopener"
+					title="Instagram"
+				>
+					<AppIcon fill="#fff" path={mdiInstagram} size={80} />
+				</a>
+			</div>
+			<div>
+				<a
+					href="https://www.linkedin.com/company/cs-club-iiitdm-kancheepuram"
+					target="_blank"
+					rel="noopener"
+					title="LinkedIn"
+				>
+					<AppIcon fill="#fff" path={mdiLinkedin} size={80} />
+				</a>
+			</div>
+			<div>
+				<a
+					href="https://www.youtube.com/channel/UCQuL8Qd1L6lML-FHXmD0pqw"
+					target="_blank"
+					rel="noopener"
+					title="YouTube"
+				>
+					<AppIcon fill="#fff" path={mdiYoutube} size={80} />
+				</a>
+			</div>
+		</div>
+	</section>
+	<br /><br />
 </main>
 
 <style lang="scss">
@@ -175,6 +224,12 @@
 		margin: 0 1rem;
 	}
 
+	.center {
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+	}
+
 	.flex {
 		display: inline-flex;
 		gap: 1rem;
@@ -182,6 +237,13 @@
 
 	#our-aim {
 		font-size: 1.3rem;
+	}
+
+	.social-handles {
+		div {
+			width: auto;
+			margin: 0 1rem;
+		}
 	}
 
 	@include small-screens {
@@ -200,8 +262,8 @@
 		img {
 			height: auto;
 			width: 100%;
-      margin: 0;
-      margin-top: 2rem;
+			margin: 0;
+			margin-top: 2rem;
 		}
 	}
 </style>
