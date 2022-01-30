@@ -1,18 +1,33 @@
 <script>
+	import Modal, { getModal } from "./Modal.svelte";
+
+	const showPopup = () => {
+		getModal(id).open();
+	};
+
 	export let actions = false;
+	export let id = "unknown";
 </script>
 
 <div class="card">
 	<div class="content">
-		<slot />
+		<slot name="content">
+			<slot />
+		</slot>
 	</div>
 	{#if actions}
 		<span class="spacer" />
 		<div class="actions">
-			<slot name="actions">+</slot>
+			<slot name="actions">
+				<div on:click={showPopup} style="cursor: pointer;">+</div>
+			</slot>
 		</div>
 	{/if}
 </div>
+
+<Modal {id}>
+	<slot name="modal-content" />
+</Modal>
 
 <style lang="scss">
 	@import "../css/screens.scss";

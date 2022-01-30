@@ -1,5 +1,7 @@
 <script>
+	import { mdiTwitter, mdiLinkedin } from "@mdi/js";
 	import InitialScreen from "../components/InitialScreen.svelte";
+	import AppIcon from "../components/AppIcon.svelte";
 
 	let isLazysizesImported = false;
 
@@ -14,26 +16,31 @@
 			{
 				name: "Subash Mylraj",
 				photo: "subash",
+				linkedIn: "subash-m-1bba75130",
 			},
 		],
 		"WebOps Head": [
 			{
 				name: "Puru Vijayvargia",
 				photo: "puru-vijayvargia",
+				twitter: "puruvjdev",
 			},
 		],
 		"Core Team": [
 			{
 				name: "Ankit Kumar",
 				photo: "ankit-kumar-bharti",
+				linkedIn: "ankit-kumar-a19753205",
 			},
 			{
 				name: "Atharva Kadlag",
 				photo: "atharva-kadlag",
+				linkedIn: "atharvakadlag",
 			},
 			{
 				name: "G V Sanjay Reddy",
 				photo: "sanjay-reddy",
+				linkedIn: "sanjay-reddy-22448b1b8",
 			},
 			{
 				name: "Sreenivas Dheeraj",
@@ -48,6 +55,7 @@
 			{
 				name: "Jashwanth",
 				photo: "jaswanth-peddisetti",
+				linkedIn: "jashwanth-peddisetty-940752200",
 			},
 			{
 				name: "Jitin",
@@ -56,20 +64,24 @@
 			{
 				name: "Somashekhar",
 				photo: "somashekhar",
+				linkedIn: "somashekhar-itagi-6836691a5",
 			},
 			{
 				name: "R Shyam Sundar",
 				photo: "shyam-sundar",
+				linkedIn: "shyam-sundar-renudevan-228325200",
 			},
 			{
 				name: "Rohail Alam",
 				photo: "rohail-alam",
+				linkedId: "rohail-alam-362a13200",
 			},
 		],
 		EDiTH: [
 			{
 				name: "Jagadeeshan S",
 				photo: "jagadeeshan",
+				linkedIn: "jagadeeshan-s-b572b51b0",
 			},
 			{
 				name: "Mariyam Joory",
@@ -78,6 +90,7 @@
 			{
 				name: "Nithish Vasanth",
 				photo: "nithish-vasanth",
+				linkedIn: "nithish-vasanth-007",
 			},
 			{
 				name: "Yerramsetti V S N Sai Mohith",
@@ -92,16 +105,19 @@
 			{
 				name: "Khushal Gautam",
 				photo: "khushal-gautam",
+				twitter: "khushalgautam",
 			},
 		],
 		PRIT: [
 			{
 				name: "Himanshu Malviya",
 				photo: "himanshu",
+				linkedIn: "himanshu-malviya-5599a5202",
 			},
 			{
 				name: "Yash Agarwal",
 				photo: "yash-agarwal",
+				linkedIn: "yash-agrawal-6340a8201",
 			},
 		],
 	};
@@ -137,7 +153,7 @@
 			<br /><br />
 
 			<div class="grid">
-				{#each person as { name, photo }}
+				{#each person as { name, photo, linkedIn, twitter }}
 					<div class="person">
 						<div class="picture">
 							<img src="/people/{photo}.webp" alt={name} use:lazy />
@@ -145,15 +161,36 @@
 
 						<br />
 
-						{name}
+						<span>{name}</span>
+
+						<br />
+
+						<div class="flex social-handles">
+							{#if twitter}
+								<a
+									href="https://twitter.com/{twitter}"
+									target="_blank"
+									rel="noopener"
+								>
+									<AppIcon fill="#fff" path={mdiTwitter} size={32} />
+								</a>
+							{/if}
+							{#if linkedIn}
+								<a
+									href="https://linkedin.com/in/${linkedIn}"
+									target="_blank"
+									rel="noopener"
+								>
+									<AppIcon fill="#fff" path={mdiLinkedin} size={32} />
+								</a>
+							{/if}
+						</div>
 					</div>
 				{/each}
 			</div>
 		</section>
 		<br /><br /><br /><br />
 	{/each}
-
-	<br /><br />
 </main>
 
 <style lang="scss">
@@ -214,6 +251,12 @@
 			height: inherit;
 			margin: 0;
 			box-sizing: border-box;
+		}
+	}
+
+	.social-handles {
+		img {
+			height: 2rem;
 		}
 	}
 
