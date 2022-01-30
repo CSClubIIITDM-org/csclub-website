@@ -177,7 +177,7 @@
 							{/if}
 							{#if linkedIn}
 								<a
-									href="https://linkedin.com/in/${linkedIn}"
+									href="https://linkedin.com/in/{linkedIn}"
 									target="_blank"
 									rel="noopener"
 								>
