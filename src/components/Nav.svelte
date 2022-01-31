@@ -22,13 +22,13 @@
 	<span />
 	<nav>
 		<a href="/" aria-current={isCurrent("/")}>HOME</a>
-		<a href="/gallery" aria-current={isCurrent("/gallery")}>GALLERY</a>
+		<!-- <a href="/gallery" aria-current={isCurrent("/gallery")}>GALLERY</a> -->
 		<a href="/cp" aria-current={isCurrent("/cp")}>CP</a>
 		<a href="/prit" aria-current={isCurrent("/prit")}>PRIT</a>
-		<a href="/edith" aria-current={isCurrent("/edith")}>EDiTH</a>
+		<a href="/edith" aria-current={isCurrent("/edith")}>EdITH</a>
 		<a href="/networking" aria-current={isCurrent("/networking")}>NETWORKING</a>
 		<a href="/people" aria-current={isCurrent("/people")}>PEOPLE</a>
-		<a href="/timeline" aria-current={isCurrent("/timeline")}>TIMELINE</a>
+		<!-- <a href="/timeline" aria-current={isCurrent("/timeline")}>TIMELINE</a> -->
 	</nav>
 
 	<div class="buttons">
@@ -66,6 +66,7 @@
 		backdrop-filter: blur(70px);
 		box-shadow: 0px 4.4px 5.3px rgba(0, 0, 0, 0.162),
 			0px 14.7px 17.9px rgba(0, 0, 0, 0.238), 0px 66px 80px rgba(0, 0, 0, 0.4);
+		box-sizing: border-box;
 	}
 	nav {
 		width: max-content;
@@ -82,7 +83,9 @@
 	.logo-alt {
 		color: var(--app-color-primary);
 		display: flex;
-		font-size: 2.5rem;
+		font-size: 1.875rem;
+		align-items: center;
+		justify-content: center;
 
 		hr {
 			margin-top: 15px;
@@ -128,6 +131,15 @@
 	}
 
 	@include small-screens {
+		.open-menu {
+			display: grid;
+		}
+		nav > a {
+			display: none;
+		}
+	}
+
+	@include medium-screens {
 		.open-menu {
 			display: grid;
 		}

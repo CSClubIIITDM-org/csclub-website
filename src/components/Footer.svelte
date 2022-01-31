@@ -69,14 +69,14 @@
 
 	.row p {
 		letter-spacing: 0.5px;
-		font-size: 1.25rem;
+		font-size: 1.125rem;
 		margin-bottom: 10px;
 	}
 
 	.column {
 		flex: 50%;
 		padding: 25px;
-		font-size: 2rem;
+		font-size: 1.5rem;
 	}
 
 	footer {

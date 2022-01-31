@@ -2,14 +2,14 @@
 	import Modal, { getModal } from "./Modal.svelte";
 
 	const showPopup = () => {
-		getModal(id).open();
+		if (actions) getModal(id).open();
 	};
 
 	export let actions = false;
 	export let id = "unknown";
 </script>
 
-<div class="card">
+<div class="card" on:click={showPopup} class:pointer={actions}>
 	<div class="content">
 		<slot name="content">
 			<slot />
@@ -19,7 +19,7 @@
 		<span class="spacer" />
 		<div class="actions">
 			<slot name="actions">
-				<div on:click={showPopup} style="cursor: pointer;">+</div>
+				<div>+</div>
 			</slot>
 		</div>
 	{/if}
@@ -32,12 +32,16 @@
 <style lang="scss">
 	@import "../css/screens.scss";
 
+	.pointer {
+		cursor: pointer;
+	}
+
 	.card {
 		margin: 0.5rem;
 		word-wrap: break-word;
 		display: flex;
 		box-sizing: border-box;
-		font-size: 1.8rem;
+		font-size: 1.5rem;
 		text-align: center;
 		align-items: center;
 		justify-content: center;
@@ -69,7 +73,7 @@
 		.card {
 			height: 8rem;
 			padding: 0.5rem;
-			font-size: 1.2rem;
+			font-size: 1rem;
 			min-width: 75vw;
 			max-width: 75vw;
 		}

@@ -3,6 +3,10 @@
 	import InitialScreen from "../components/InitialScreen.svelte";
 </script>
 
+<svelte:head>
+	<title>EdITH / CS Club / IIITDM Kancheepuram</title>
+</svelte:head>
+
 <InitialScreen>Educating Information Technology and Hardware</InitialScreen>
 <main>
 	<section id="our-aim" class="flex">
@@ -10,7 +14,7 @@
 			<h2>Our Aim</h2>
 			<br />
 			<p>
-				Education in Information Technology and Hardware commonly known as EDiTH
+				Education in Information Technology and Hardware commonly known as EdITH
 				is a branch of the CS Club that strives to create opportunities for
 				students to explore a variety of domains in Computer Science - bridging
 				the gap between software and hardware. We help students explore
@@ -185,7 +189,7 @@
 	}
 
 	#our-aim {
-		font-size: 1.3rem;
+		font-size: 0.95rem;
 	}
 
 	.our-events {
@@ -215,7 +219,7 @@
 		}
 
 		h2 {
-			font-size: 3rem;
+			font-size: 2.25rem;
 		}
 	}
 </style>

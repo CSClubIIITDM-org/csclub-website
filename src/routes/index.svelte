@@ -4,6 +4,10 @@
 	import Spoiler from "../components/Spoiler.svelte";
 </script>
 
+<svelte:head>
+	<title>CS Club / IIITDM Kancheepuram</title>
+</svelte:head>
+
 <InitialScreen>CS Club IITDM</InitialScreen>
 <main>
 	<section id="about-us" class="flex">
@@ -64,6 +68,7 @@
 	img {
 		height: 20rem;
 		width: auto;
+		max-width: 100%;
 	}
 
 	.flex {
@@ -72,7 +77,7 @@
 	}
 
 	#about-us {
-		font-size: 1.3rem;
+		font-size: 0.95rem;
 	}
 
 	.our-events {
@@ -102,11 +107,11 @@
 		}
 
 		h2 {
-			font-size: 3rem;
+			font-size: 2.25rem;
 		}
 
 		#about-us {
-			font-size: 1.15rem;
+			font-size: 0.9rem;
 		}
 	}
 </style>

@@ -266,7 +266,7 @@
 		}
 
 		h2 {
-			font-size: 3rem;
+			font-size: 2.25rem;
 		}
 	}
 </style>

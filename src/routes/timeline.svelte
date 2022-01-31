@@ -2,6 +2,10 @@
 	import InitialScreen from "../components/InitialScreen.svelte";
 </script>
 
+<svelte:head>
+	<title>Timeline / CS Club / IIITDM Kancheepuram</title>
+</svelte:head>
+
 <InitialScreen>Timeline</InitialScreen>
 
 <main>
@@ -47,7 +51,7 @@
 		}
 
 		h2 {
-			font-size: 3rem;
+			font-size: 2.25rem;
 		}
 	}
 </style>

@@ -77,7 +77,7 @@
 
 		.content {
 			p {
-				font-size: 1.5rem;
+				font-size: 0.9rem;
 			}
 		}
 
@@ -95,41 +95,8 @@
 		}
 	}
 
-	.cards {
-		display: flex;
-		gap: 2rem;
-
-		padding: 1rem 0;
-
-		width: 100%;
-
-		overflow-x: scroll;
-		overflow-y: hidden;
-
-		margin-bottom: 3rem;
-	}
-
-	.card {
-		display: grid;
-		place-items: center;
-
-		flex: 1;
-
-		min-width: 20rem;
-		width: 20rem;
-
-		padding: 1rem;
-
-		text-align: center;
-		font-size: 1.4rem;
-
-		background-image: var(--app-gradient-light);
-
-		border-radius: 1rem;
-	}
-
 	.resources {
-		font-size: 1.5rem;
+		font-size: 0.9rem;
 	}
 
 	.our-events {
@@ -159,7 +126,7 @@
 		}
 
 		h2 {
-			font-size: 3rem;
+			font-size: 2.25rem;
 		}
 
 		.our-aim {

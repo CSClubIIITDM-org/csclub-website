@@ -3,6 +3,10 @@
 	import InitialScreen from "../components/InitialScreen.svelte";
 </script>
 
+<svelte:head>
+	<title>Competitive Programming / CS Club / IIITDM Kancheepuram</title>
+</svelte:head>
+
 <InitialScreen>Competitive Programming</InitialScreen>
 <main>
 	<section id="our-aim" class="flex">
@@ -41,30 +45,6 @@
 		</div>
 	</section>
 	<br /><br />
-	<section id="resources">
-		<h2>Resources</h2>
-		<br />
-		<p>Link- 1:</p>
-		<p>Link- 2:</p>
-		<p>Link- 3:</p>
-	</section>
-	<br /><br />
-	<section id="leaderboard">
-		<h2>Leaderboard</h2>
-		<br />
-		<div class="leaderboard">
-			<div class="candidate" />
-			<div class="candidate" />
-			<div class="candidate" />
-			<div class="candidate" />
-			<div class="candidate" />
-			<div class="candidate" />
-			<div class="candidate" />
-			<div class="candidate" />
-			<div class="candidate" />
-		</div>
-	</section>
-	<br /><br />
 </main>
 
 <style lang="scss">
@@ -96,42 +76,14 @@
 		}
 	}
 
-	#resources {
-		p {
-			font-size: 1.5rem;
-		}
-	}
-
 	#our-aim {
 		p {
-			font-size: 1.3rem;
+			font-size: 0.95rem;
 		}
 
 		img {
 			height: 20rem;
 			width: auto;
-		}
-	}
-
-	.leaderboard {
-		display: flex;
-		padding: 1rem;
-		background: #000000;
-		box-shadow: inset 0px 4px 100px rgba(67, 233, 123, 0.5);
-		border-radius: 10px;
-		flex-direction: column;
-
-		.candidate {
-			height: 3.5rem;
-			margin-bottom: 1rem;
-			width: 100%;
-			background: linear-gradient(180deg, #1fdb95 0%, #43e97b 100%);
-			box-shadow: 0px 0px 50px #000000;
-			border-radius: 10px;
-		}
-
-		.candidate:nth-of-type(1) {
-			margin-bottom: 10rem;
 		}
 	}
 
@@ -145,13 +97,8 @@
 		}
 
 		h2 {
-			font-size: 3rem;
+			font-size: 2.25rem;
 		}
-
-		#about-us {
-			font-size: 1.15rem;
-		}
-
 		#cp {
 			height: 15rem;
 		}
