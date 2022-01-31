@@ -21,14 +21,14 @@
 
 	.heading h1 {
 		text-align: center;
-		font-size: 4.5rem;
+		font-size: 4rem;
 		font-family: var(--app-heading-font-family);
 		font-style: normal;
 	}
 
 	@include small-screens {
 		.heading h1 {
-			font-size: avh(6);
+			font-size: avh(4.5);
 		}
 	}
 </style>

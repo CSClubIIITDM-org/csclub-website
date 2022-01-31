@@ -30,13 +30,13 @@
 	</div>
 	<div class="links-container">
 		<a href="/" aria-current={isCurrent("/")}>HOME</a>
-		<a href="/gallery" aria-current={isCurrent("/gallery")}>GALLERY</a>
+		<!-- <a href="/gallery" aria-current={isCurrent("/gallery")}>GALLERY</a> -->
 		<a href="/cp" aria-current={isCurrent("/cp")}>CP</a>
 		<a href="/prit" aria-current={isCurrent("/prit")}>PRIT</a>
-		<a href="/edith" aria-current={isCurrent("/edith")}>EDiTH</a>
+		<a href="/edith" aria-current={isCurrent("/edith")}>EdITH</a>
 		<a href="/networking" aria-current={isCurrent("/networking")}>NETWORKING</a>
 		<a href="/people" aria-current={isCurrent("/people")}>PEOPLE</a>
-		<a href="/timeline" aria-current={isCurrent("/timeline")}>TIMELINE</a>
+		<!-- <a href="/timeline" aria-current={isCurrent("/timeline")}>TIMELINE</a> -->
 	</div>
 </nav>
 
@@ -80,6 +80,6 @@
 	}
 	a {
 		text-align: center;
-		font-size: 1.6rem;
+		font-size: 1.2rem;
 	}
 </style>

@@ -19,6 +19,10 @@
 	};
 </script>
 
+<svelte:head>
+	<title>Gallery / CS Club / IIITDM Kancheepuram</title>
+</svelte:head>
+
 <InitialScreen>Gallery</InitialScreen>
 <div class="gallery-tiles">
 	<div class="tiles">
@@ -54,7 +58,7 @@
 	}
 
 	.gallery-tiles h2 {
-		font-size: 40px;
+		font-size: 2.25rem;
 		overflow: hidden;
 		text-align: center;
 	}
@@ -101,10 +105,6 @@
 
 		.flex {
 			flex-direction: column;
-		}
-
-		h2 {
-			font-size: 3rem;
 		}
 	}
 </style>

@@ -21,7 +21,7 @@
 		}
 	</style>
 </svelte:head>
-<main style="height: auto;" bind:this={main}>
+<main style="height: auto; box-sizing: border-box;" bind:this={main}>
 	<Nav />
 	<slot />
 	<div class="footer">

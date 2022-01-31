@@ -18,8 +18,8 @@
 		display: flex;
 		flex-direction: row;
 		box-sizing: border-box;
-		font-size: 1.5rem;
-		padding: 2rem;
+		font-size: 1.125rem;
+		padding: 1.5rem;
 		align-items: center;
 		height: 5rem;
 		background: var(--app-gradient-light);
@@ -34,8 +34,8 @@
 	@include small-screens {
 		.spoiler {
 			height: 4rem;
-			font-size: 1rem;
-      padding: 1.5rem;
+			font-size: 0.75rem;
+      padding: 1.125rem;
 		}
 	}
 </style>
