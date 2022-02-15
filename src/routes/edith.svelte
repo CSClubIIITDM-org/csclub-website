@@ -41,6 +41,47 @@
 			<!-- TODO: put everything inside a 'for' loop and have an array of events
            in JS -->
 			<div>
+				<Card actions id="golang-crash-course">
+					<span slot="content"
+						>GoLang Crash Course/span>
+						<div slot="modal-content">
+							<span class="flex">
+								<h3>Conducted By</h3>
+								Jagadeeshan<br />
+							</span>
+							<h3>Number of attendees</h3>
+							<span>40-45</span><br />
+							<h3>Resources</h3>
+							<div>GoLang</div>
+							<br />
+							<h3>Outcome</h3>
+							<div>
+								Basic syntax of go, variables, Formatting, Flow control( if
+								else, for loop, for range loop, while loop, switch case) ,
+								Functions, struct, interfaces
+							</div>
+						</div>
+					</span></Card
+				>
+				<Card actions id="flask">
+					<span slot="content">Flask</span>
+					<div slot="modal-content">
+						<span class="flex">
+							<h3>Conducted By</h3>
+							Atharva<br />
+						</span>
+						<h3>Number of attendees</h3>
+						<span>30-40</span><br />
+						<h3>Resources</h3>
+						<div>Flask</div>
+						<br />
+						<h3>Outcome</h3>
+						<div>
+							Attendees were introduced to the flask microframework. A basic
+							CRUD application was built from scratch.
+						</div>
+					</div>
+				</Card>
 				<Card actions id="linux-session">
 					<span slot="content">Linux Session</span>
 					<div slot="modal-content">
@@ -125,25 +166,6 @@
 							of git version control like commit and pushing it to remote
 							repositories. The session also touched upon analysing git logs to
 							navigate through versions.
-						</div>
-					</div>
-				</Card>
-				<Card actions id="flask">
-					<span slot="content">Flask</span>
-					<div slot="modal-content">
-						<span class="flex">
-							<h3>Conducted By</h3>
-							Atharva<br />
-						</span>
-						<h3>Number of attendees</h3>
-						<span>30-40</span><br />
-						<h3>Resources</h3>
-						<div>Flask</div>
-						<br />
-						<h3>Outcome</h3>
-						<div>
-							Attendees were introduced to the flask microframework. A basic
-							CRUD application was built from scratch.
 						</div>
 					</div>
 				</Card>
