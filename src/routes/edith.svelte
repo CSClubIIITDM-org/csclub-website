@@ -42,27 +42,25 @@
            in JS -->
 			<div>
 				<Card actions id="golang-crash-course">
-					<span slot="content"
-						>GoLang Crash Course/span>
-						<div slot="modal-content">
-							<span class="flex">
-								<h3>Conducted By</h3>
-								Jagadeeshan<br />
-							</span>
-							<h3>Number of attendees</h3>
-							<span>40-45</span><br />
-							<h3>Resources</h3>
-							<div>GoLang</div>
-							<br />
-							<h3>Outcome</h3>
-							<div>
-								Basic syntax of go, variables, Formatting, Flow control( if
-								else, for loop, for range loop, while loop, switch case) ,
-								Functions, struct, interfaces
-							</div>
+					<span slot="content">GoLang Crash Course</span>
+					<div slot="modal-content">
+						<span class="flex">
+							<h3>Conducted By</h3>
+							Jagadeeshan<br />
+						</span>
+						<h3>Number of attendees</h3>
+						<span>40-45</span><br />
+						<h3>Resources</h3>
+						<div>GoLang</div>
+						<br />
+						<h3>Outcome</h3>
+						<div>
+							Basic syntax of go, variables, Formatting, Flow control( if else,
+							for loop, for range loop, while loop, switch case) , Functions,
+							struct, interfaces
 						</div>
-					</span></Card
-				>
+					</div>
+				</Card>
 				<Card actions id="flask">
 					<span slot="content">Flask</span>
 					<div slot="modal-content">
