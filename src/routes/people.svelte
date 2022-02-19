@@ -48,7 +48,7 @@
 			},
 			{
 				name: "Sumit Kumar",
-				photo: "sumit-kumar",
+				photo: "sumit-kumar-41ba74192",
 			},
 		],
 		"Competetive Programming": [
@@ -105,7 +105,7 @@
 			{
 				name: "Khushal Gautam",
 				photo: "khushal-gautam",
-				twitter: "khushalgautam",
+				twitter: "khushal-gautam-20a274226",
 			},
 		],
 		PRIT: [
