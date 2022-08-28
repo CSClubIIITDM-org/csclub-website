@@ -1,7 +1,7 @@
 <script>
 	import { mdiDiscord, mdiInstagram, mdiLinkedin, mdiYoutube } from "@mdi/js";
-	import AppIcon from "../components/AppIcon.svelte";
-	import InitialScreen from "../components/InitialScreen.svelte";
+	import AppIcon from "../../components/AppIcon.svelte";
+	import InitialScreen from "../../components/InitialScreen.svelte";
 </script>
 
 <svelte:head>
@@ -84,7 +84,7 @@
 </main>
 
 <style lang="scss">
-	@import "../css/screens.scss";
+	@import "../../css/screens.scss";
 
 	main {
 		padding: 0.25rem 2rem;

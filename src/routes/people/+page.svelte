@@ -1,7 +1,7 @@
 <script>
 	import { mdiTwitter, mdiLinkedin } from "@mdi/js";
-	import InitialScreen from "../components/InitialScreen.svelte";
-	import AppIcon from "../components/AppIcon.svelte";
+	import InitialScreen from "../../components/InitialScreen.svelte";
+	import AppIcon from "../../components/AppIcon.svelte";
 
 	let isLazysizesImported = false;
 
@@ -194,7 +194,7 @@
 </main>
 
 <style lang="scss">
-	@import "../css/screens.scss";
+	@import "../../css/screens.scss";
 
 	main {
 		padding: 0.25rem 2rem;
@@ -251,12 +251,6 @@
 			height: inherit;
 			margin: 0;
 			box-sizing: border-box;
-		}
-	}
-
-	.social-handles {
-		img {
-			height: 2rem;
 		}
 	}
 

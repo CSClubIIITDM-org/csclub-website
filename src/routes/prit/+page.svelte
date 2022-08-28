@@ -1,6 +1,6 @@
 <script>
-	import Card from "../components/Card.svelte";
-	import InitialScreen from "../components/InitialScreen.svelte";
+	import Card from "../../components/Card.svelte";
+	import InitialScreen from "../../components/InitialScreen.svelte";
 </script>
 
 <svelte:head>
@@ -64,7 +64,7 @@
 </main>
 
 <style lang="scss">
-	@import "../css/screens.scss";
+	@import "../../css/screens.scss";
 
 	main {
 		padding: 0.25rem 2rem;
@@ -119,10 +119,6 @@
 	@include small-screens {
 		main {
 			padding: 0.25vw 2vw;
-		}
-
-		.flex {
-			flex-direction: column;
 		}
 
 		h2 {

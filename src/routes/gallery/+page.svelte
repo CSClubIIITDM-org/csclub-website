@@ -1,5 +1,5 @@
 <script>
-	import InitialScreen from "../components/InitialScreen.svelte";
+	import InitialScreen from "../../components/InitialScreen.svelte";
 
 	const carouselPhotos = [
 		"CS Club IIITDM",
@@ -48,7 +48,7 @@
 </div>
 
 <style lang="scss">
-	@import "../css/screens.scss";
+	@import "../../css/screens.scss";
 
 	.gallery-tiles {
 		padding-top: 5%;
@@ -62,6 +62,7 @@
 		overflow: hidden;
 		text-align: center;
 	}
+
 	.gallery-tiles h2:before,
 	h2:after {
 		background-color: var(--app-color-primary);
@@ -96,15 +97,5 @@
 		padding: 5%;
 		margin-top: 1%;
 		height: 300px;
-	}
-
-	@include small-screens {
-		main {
-			padding: 0.25vw 2vw;
-		}
-
-		.flex {
-			flex-direction: column;
-		}
 	}
 </style>
