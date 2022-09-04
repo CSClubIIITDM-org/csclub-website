@@ -14,78 +14,20 @@
 		],
 		"Head Core": [
 			{
-				name: "Subash Mylraj",
-				photo: "subash",
-				linkedIn: "subash-m-1bba75130",
-			},
-		],
-		"WebOps Head": [
-			{
-				name: "Puru Vijayvargia",
-				photo: "puru-vijayvargia",
-				twitter: "puruvjdev",
-			},
-		],
-		"Core Team": [
-			{
-				name: "Ankit Kumar",
-				photo: "ankit-kumar-bharti",
-				linkedIn: "ankit-kumar-a19753205",
-			},
-			{
 				name: "Atharva Kadlag",
 				photo: "atharva-kadlag",
 				linkedIn: "atharvakadlag",
 			},
-			{
-				name: "G V Sanjay Reddy",
-				photo: "sanjay-reddy",
-				linkedIn: "sanjay-reddy-22448b1b8",
-			},
-			{
-				name: "Sreenivas Dheeraj",
-				photo: "sreenivas-dheeraj",
-			},
-			{
-				name: "Sumit Kumar",
-				photo: "sumit-kumar-41ba74192",
-			},
 		],
-		"Competetive Programming": [
+		"Core Team": [
 			{
-				name: "Jashwanth",
-				photo: "jaswanth-peddisetti",
-				linkedIn: "jashwanth-peddisetty-940752200",
-			},
-			{
-				name: "Jitin",
-				photo: "chekka-jitin-krishna",
-			},
-			{
-				name: "Somashekhar",
-				photo: "somashekhar",
-				linkedIn: "somashekhar-itagi-6836691a5",
-			},
-			{
-				name: "R Shyam Sundar",
-				photo: "shyam-sundar",
-				linkedIn: "shyam-sundar-renudevan-228325200",
+				name: "Naveen Rampuram",
+				photo: "naveen-rampuram",
 			},
 			{
 				name: "Rohail Alam",
 				photo: "rohail-alam",
 				linkedId: "rohail-alam-362a13200",
-			},
-		],
-		EDiTH: [
-			{
-				name: "Jagadeeshan S",
-				photo: "jagadeeshan",
-				linkedIn: "jagadeeshan-s-b572b51b0",
-			},
-			{
-				name: "Mariyam Joory",
-				photo: "mariyam",
 			},
 			{
 				name: "Nithish Vasanth",
@@ -93,11 +35,19 @@
 				linkedIn: "nithish-vasanth-007",
 			},
 			{
-				name: "Yerramsetti V S N Sai Mohith",
-				photo: "mohith",
+				name: "Jagadeeshan S",
+				photo: "jagadeeshan",
+				linkedIn: "jagadeeshan-s-b572b51b0",
 			},
-		],
-		Networking: [
+			{
+				name: "Himanshu Malviya",
+				photo: "himanshu",
+				linkedIn: "himanshu-malviya-5599a5202",
+			},
+			{
+				name: "Jayavardhan Reddy",
+				photo: "jayavardhan-reddy",
+			},
 			{
 				name: "Dheeraj Kumar",
 				photo: "dheeraj-kumar",
@@ -108,16 +58,73 @@
 				twitter: "khushal-gautam-20a274226",
 			},
 		],
-		PRIT: [
+		"Competetive Programming": [
 			{
-				name: "Himanshu Malviya",
-				photo: "himanshu",
-				linkedIn: "himanshu-malviya-5599a5202",
+				name: "Dheeraj Singh",
+				photo: "dheeraj-singh",
 			},
 			{
-				name: "Yash Agarwal",
-				photo: "yash-agarwal",
-				linkedIn: "yash-agrawal-6340a8201",
+				name: "N Navaneethakrishna",
+				photo: "navaneethakrishna",
+			},
+			{
+				name: "R Anjana Narayan",
+				photo: "anjana-narayan",
+			},
+			{
+				name: "Rahul N",
+				photo: "rahul",
+			},
+		],
+		EdITH: [
+			{
+				name: "Nandhakumaran M",
+				photo: "nandhakumaran",
+			},
+			{
+				name: "Suhas N",
+				photo: "blank",
+			},
+			{
+				name: "Karan Kishore",
+				photo: "karan-kishore",
+			},
+			{
+				name: "Sibi M",
+				photo: "sibi",
+			},
+		],
+		PRIT: [
+			{
+				name: "Jyothikrishna",
+				photo: "sajja-jyothikrishna",
+			},
+			{
+				name: "Abhishek M J",
+				photo: "abhishek-mj",
+				linkedIn: "abhishek-m-j-607964225",
+			},
+			{
+				name: "Anish V Thomas",
+				photo: "anish-v-thomas",
+			},
+			{
+				name: "U.Anandhakumar",
+				photo: "anandhakumar",
+			},
+		],
+		Networking: [
+			{
+				name: "K Jai Krishna",
+				photo: "jai-krishna",
+			},
+			{
+				name: "Vibhav",
+				photo: "vibhav",
+			},
+			{
+				name: "B.Saish",
+				photo: "saish",
 			},
 		],
 	};
