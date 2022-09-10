@@ -6,6 +6,7 @@
 	let innerHeight = 0;
 	let main = undefined;
 
+
 	$: {
 		// see https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
 		let vh = innerHeight * 0.01;
