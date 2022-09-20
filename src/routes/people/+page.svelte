@@ -83,7 +83,7 @@
 			},
 			{
 				name: "Suhas N",
-				photo: "blank",
+				photo: "suhas",
 			},
 			{
 				name: "Karan Kishore",
